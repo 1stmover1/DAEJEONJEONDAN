@@ -3,19 +3,16 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>대전전단지 제작 1위 | 대전현수막 제작 전문 | 당일 디자인 시안</title>
-    <meta name="description" content="대전전단지 제작 전문업체. 대전현수막 제작부터 배포까지 원스톱. 무료 디자인 시안 당일 제공. 둔산동, 유성구, 은행동 전지역 서비스. 010-2364-2355">
-    <meta name="keywords" content="대전전단지, 대전전단지제작, 대전현수막, 대전현수막제작, 대전전단지배포, 유성구전단지, 둔산동전단지, 은행동현수막, 대전광고물제작, 대전인쇄">
+    <title>대전전단지 제작 1위 | 대전현수막 | 당일 무료 디자인</title>
+    <meta name="description" content="대전전단지, 대전현수막 제작 전문. 010-5456-7754. 식당, 학원, 병원 맞춤 디자인. 둔산동, 유성구 전지역 배포. 명함, 배너 제작 가능.">
+    <meta name="keywords" content="대전전단지, 대전현수막, 대전전단지배포, 유성구전단지, 둔산동전단지, 대전명함, 대전배너, 대전인쇄">
     
     <!-- Open Graph -->
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://www.daejeon-jeondanji.com/">
-    <meta property="og:title" content="대전전단지 제작 1위 | 대전현수막 제작 전문">
-    <meta property="og:description" content="무료 디자인 시안 당일 제공. 대전 전지역 배포 서비스. 010-2364-2355">
+    <meta property="og:title" content="대전전단지 제작 1위 | 대전현수막 전문">
+    <meta property="og:description" content="깔끔한 디자인, 합리적 가격. 010-5456-7754 무료 상담.">
     <meta property="og:image" content="https://images.unsplash.com/photo-1542744173-8e7e53415bb0?w=1200&h=630&fit=crop">
-    
-    <!-- Canonical -->
-    <link rel="canonical" href="https://www.daejeon-jeondanji.com/">
     
     <!-- Tailwind CSS CDN -->
     <script src="https://cdn.tailwindcss.com"></script>
@@ -23,1317 +20,480 @@
     <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;500;600;700;800;900&family=Playfair+Display:wght@700;900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Pretendard:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
     
     <!-- AOS Animation -->
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     
     <style>
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
-        
         body {
-            font-family: 'Noto Sans KR', sans-serif;
+            font-family: 'Pretendard', sans-serif;
+            color: #1f2937;
+            background-color: #ffffff;
             overflow-x: hidden;
         }
         
-        .font-display {
-            font-family: 'Playfair Display', serif;
+        .text-primary {
+            color: #2563eb;
         }
         
-        /* Premium Gradient */
-        .gradient-primary {
-            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+        .bg-primary {
+            background-color: #2563eb;
         }
         
-        .gradient-success {
-            background: linear-gradient(135deg, #10b981 0%, #059669 100%);
+        .btn-primary {
+            background-color: #2563eb;
+            color: white;
+            transition: all 0.3s ease;
         }
         
-        .gradient-warning {
-            background: linear-gradient(135deg, #f59e0b 0%, #d97706 100%);
+        .btn-primary:hover {
+            background-color: #1d4ed8;
+            transform: translateY(-2px);
+            box-shadow: 0 4px 12px rgba(37, 99, 235, 0.3);
         }
         
-        .gradient-danger {
-            background: linear-gradient(135deg, #ef4444 0%, #dc2626 100%);
+        .btn-outline {
+            border: 2px solid #2563eb;
+            color: #2563eb;
+            background-color: transparent;
+            transition: all 0.3s ease;
         }
         
-        /* Glass Morphism */
-        .glass {
-            background: rgba(255, 255, 255, 0.95);
+        .btn-outline:hover {
+            background-color: #2563eb;
+            color: white;
+        }
+        
+        .section-padding {
+            padding-top: 5rem;
+            padding-bottom: 5rem;
+        }
+        
+        .glass-header {
+            background: rgba(255, 255, 255, 0.9);
             backdrop-filter: blur(10px);
-            -webkit-backdrop-filter: blur(10px);
-            border: 1px solid rgba(255, 255, 255, 0.3);
+            border-bottom: 1px solid #e5e7eb;
         }
         
-        /* Premium Shadow */
-        .shadow-premium {
-            box-shadow: 0 20px 60px rgba(0, 0, 0, 0.15);
-        }
-        
-        .shadow-hover {
-            transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
-        }
-        
-        .shadow-hover:hover {
-            transform: translateY(-10px);
-            box-shadow: 0 30px 80px rgba(0, 0, 0, 0.2);
-        }
-        
-        /* Smooth Animation */
-        .animate-float {
-            animation: float 6s ease-in-out infinite;
-        }
-        
-        @keyframes float {
-            0%, 100% { transform: translateY(0px); }
-            50% { transform: translateY(-20px); }
-        }
-        
-        .animate-pulse-slow {
-            animation: pulse 3s cubic-bezier(0.4, 0, 0.6, 1) infinite;
-        }
-        
-        /* Sticky Header */
-        .sticky-header {
-            position: sticky;
-            top: 0;
-            z-index: 9999;
-            transition: all 0.3s ease;
-        }
-        
-        .sticky-header.scrolled {
-            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
-        }
-        
-        /* Hero Background */
-        .hero-bg {
-            background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
-            position: relative;
-            overflow: hidden;
-        }
-        
-        .hero-bg::before {
-            content: '';
-            position: absolute;
-            top: 0;
-            left: 0;
-            right: 0;
-            bottom: 0;
-            background-image: 
-                radial-gradient(circle at 20% 50%, rgba(102, 126, 234, 0.1) 0%, transparent 50%),
-                radial-gradient(circle at 80% 80%, rgba(16, 185, 129, 0.1) 0%, transparent 50%);
-        }
-        
-        /* CTA Button */
-        .cta-primary {
-            background: linear-gradient(135deg, #10b981 0%, #059669 100%);
-            box-shadow: 0 10px 30px rgba(16, 185, 129, 0.3);
-            transition: all 0.3s ease;
-        }
-        
-        .cta-primary:hover {
-            transform: translateY(-3px);
-            box-shadow: 0 15px 40px rgba(16, 185, 129, 0.4);
-        }
-        
-        .cta-secondary {
-            background: linear-gradient(135deg, #f59e0b 0%, #d97706 100%);
-            box-shadow: 0 10px 30px rgba(245, 158, 11, 0.3);
-            transition: all 0.3s ease;
-        }
-        
-        .cta-secondary:hover {
-            transform: translateY(-3px);
-            box-shadow: 0 15px 40px rgba(245, 158, 11, 0.4);
-        }
-        
-        /* Number Counter Animation */
-        .counter {
-            font-variant-numeric: tabular-nums;
-        }
-        
-        /* Image Hover Effect */
-        .img-hover {
-            overflow: hidden;
+        .img-rounded {
             border-radius: 1rem;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+        }
+
+        .service-icon-box {
+            width: 60px;
+            height: 60px;
+            border-radius: 12px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-bottom: 1rem;
+            background-color: #eff6ff;
+            color: #2563eb;
+        }
+
+        .check-list li {
+            display: flex;
+            align-items: center;
+            margin-bottom: 0.5rem;
+            color: #4b5563;
         }
         
-        .img-hover img {
-            transition: transform 0.6s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+        .check-list li svg {
+            color: #2563eb;
+            margin-right: 0.5rem;
+            flex-shrink: 0;
         }
         
-        .img-hover:hover img {
-            transform: scale(1.1) rotate(2deg);
+        /* Sticky CTA for Mobile */
+        .mobile-sticky-cta {
+            display: none;
         }
         
-        /* Service Card */
-        .service-card {
-            background: white;
-            border-radius: 1.5rem;
-            padding: 2.5rem;
-            transition: all 0.4s ease;
-            border: 2px solid transparent;
-        }
-        
-        .service-card:hover {
-            border-color: #10b981;
-            transform: translateY(-8px);
-            box-shadow: 0 25px 60px rgba(0, 0, 0, 0.12);
-        }
-        
-        /* Testimonial */
-        .testimonial {
-            background: linear-gradient(135deg, #ffffff 0%, #f9fafb 100%);
-            border-left: 5px solid #10b981;
-        }
-        
-        /* Process Timeline */
-        .timeline-item::before {
-            content: '';
-            position: absolute;
-            left: 50%;
-            transform: translateX(-50%);
-            width: 3px;
-            height: 100%;
-            background: linear-gradient(180deg, #667eea 0%, #10b981 100%);
-        }
-        
-        /* Form Input */
-        .form-input {
-            transition: all 0.3s ease;
-            border: 2px solid #e5e7eb;
-        }
-        
-        .form-input:focus {
-            border-color: #10b981;
-            box-shadow: 0 0 0 3px rgba(16, 185, 129, 0.1);
-            outline: none;
-        }
-        
-        /* Responsive */
         @media (max-width: 768px) {
-            .hero-bg::before {
-                background-size: cover;
+            .mobile-sticky-cta {
+                display: flex;
+                position: fixed;
+                bottom: 0;
+                left: 0;
+                width: 100%;
+                z-index: 50;
+                background: white;
+                box-shadow: 0 -2px 10px rgba(0,0,0,0.1);
+            }
+            .mobile-sticky-cta a {
+                flex: 1;
+                text-align: center;
+                padding: 1rem;
+                font-weight: 700;
             }
         }
     </style>
     
-    <!-- Schema.org LocalBusiness -->
+    <!-- Schema.org -->
     <script type="application/ld+json">
     {
         "@context": "https://schema.org",
         "@type": "LocalBusiness",
         "name": "대전디자인프린트",
-        "description": "대전전단지 제작 및 대전현수막 제작 전문업체. 무료 디자인 시안 제공.",
         "image": "https://images.unsplash.com/photo-1542744173-8e7e53415bb0?w=1200",
-        "@id": "https://www.daejeon-jeondanji.com",
-        "url": "https://www.daejeon-jeondanji.com",
-        "telephone": "010-2364-2355",
-        "priceRange": "₩₩",
+        "telephone": "010-5456-7754",
         "address": {
             "@type": "PostalAddress",
             "addressLocality": "대전",
             "addressRegion": "대전광역시",
             "addressCountry": "KR"
         },
-        "geo": {
-            "@type": "GeoCoordinates",
-            "latitude": 36.3504119,
-            "longitude": 127.3845475
-        },
-        "areaServed": [
-            {
-                "@type": "City",
-                "name": "대전광역시"
-            },
-            {
-                "@type": "AdministrativeArea",
-                "name": "유성구"
-            },
-            {
-                "@type": "AdministrativeArea",
-                "name": "서구"
-            },
-            {
-                "@type": "AdministrativeArea",
-                "name": "둔산동"
-            }
-        ],
-        "serviceType": ["전단지 제작", "현수막 제작", "전단지 배포", "명함 제작", "광고물 제작"],
-        "openingHoursSpecification": {
-            "@type": "OpeningHoursSpecification",
-            "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"],
-            "opens": "09:00",
-            "closes": "18:00"
-        }
-    }
-    </script>
-    
-    <!-- FAQPage Schema -->
-    <script type="application/ld+json">
-    {
-        "@context": "https://schema.org",
-        "@type": "FAQPage",
-        "mainEntity": [
-            {
-                "@type": "Question",
-                "name": "대전전단지 제작 비용은 얼마인가요?",
-                "acceptedAnswer": {
-                    "@type": "Answer",
-                    "text": "대전전단지는 500장 기준 60,000원부터 시작합니다. 수량과 용지에 따라 가격이 달라지며, 무료 견적을 제공해 드립니다."
-                }
-            },
-            {
-                "@type": "Question",
-                "name": "대전현수막 제작 기간은 얼마나 걸리나요?",
-                "acceptedAnswer": {
-                    "@type": "Answer",
-                    "text": "대전현수막은 디자인 확정 후 1-2일 내 제작 완료됩니다. 급하신 경우 당일 제작도 가능합니다."
-                }
-            },
-            {
-                "@type": "Question",
-                "name": "유성구, 둔산동 지역 배포도 가능한가요?",
-                "acceptedAnswer": {
-                    "@type": "Answer",
-                    "text": "네, 유성구, 둔산동, 은행동 등 대전 전지역 배포가 가능합니다. 타겟 지역을 정해주시면 정확하게 배포해 드립니다."
-                }
-            }
-        ]
+        "priceRange": "₩₩",
+        "description": "대전전단지, 현수막, 명함 제작 전문. 당일 디자인 무료."
     }
     </script>
 </head>
-<body class="bg-white">
-    
-    <!-- Sticky Header -->
-    <header class="sticky-header glass">
-        <nav class="container mx-auto px-4 lg:px-8 py-4">
-            <div class="flex items-center justify-between">
-                <!-- Logo -->
-                <a href="#home" class="flex items-center space-x-2">
-                    <div class="w-10 h-10 gradient-primary rounded-lg flex items-center justify-center">
-                        <svg class="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M7 21a4 4 0 01-4-4V5a2 2 0 012-2h4a2 2 0 012 2v12a4 4 0 01-4 4zm0 0h12a2 2 0 002-2v-4a2 2 0 00-2-2h-2.343M11 7.343l1.657-1.657a2 2 0 012.828 0l2.829 2.829a2 2 0 010 2.828l-8.486 8.485M7 17h.01"/>
-                        </svg>
-                    </div>
-                    <span class="text-xl font-bold bg-gradient-to-r from-purple-600 to-green-600 bg-clip-text text-transparent">대전디자인프린트</span>
-                </a>
-                
-                <!-- Desktop Menu -->
-                <div class="hidden lg:flex items-center space-x-8">
-                    <a href="#services" class="text-gray-700 hover:text-green-600 font-semibold transition">서비스</a>
-                    <a href="#portfolio" class="text-gray-700 hover:text-green-600 font-semibold transition">포트폴리오</a>
-                    <a href="#process" class="text-gray-700 hover:text-green-600 font-semibold transition">제작과정</a>
-                    <a href="#contact" class="text-gray-700 hover:text-green-600 font-semibold transition">상담신청</a>
-                </div>
-                
-                <!-- CTA Buttons -->
-                <div class="flex items-center space-x-3">
-                    <a href="#contact" class="cta-primary hidden md:inline-flex items-center text-white px-6 py-3 rounded-full font-bold text-sm shadow-lg">
-                        <svg class="w-5 h-5 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 15l-2 5L9 9l11 4-5 2zm0 0l5 5M7.188 2.239l.777 2.897M5.136 7.965l-2.898-.777M13.95 4.05l-2.122 2.122m-5.657 5.656l-2.12 2.122"/>
-                        </svg>
-                        무료 시안 신청
-                    </a>
-                    <a href="tel:010-2364-2355" class="cta-secondary text-white px-5 py-3 rounded-full font-bold text-sm shadow-lg flex items-center">
-                        <svg class="w-5 h-5 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"/>
-                        </svg>
-                        <span class="hidden sm:inline">010-2364-2355</span>
-                        <span class="sm:hidden">전화</span>
-                    </a>
-                </div>
+<body>
+
+    <!-- Header -->
+    <header class="fixed w-full top-0 z-50 glass-header transition-all duration-300">
+        <div class="container mx-auto px-4 lg:px-8 py-4 flex justify-between items-center">
+            <a href="#" class="text-2xl font-bold tracking-tight text-gray-900">
+                대전<span class="text-primary">디자인</span>
+            </a>
+            
+            <nav class="hidden md:flex space-x-8">
+                <a href="#flyer" class="text-gray-600 hover:text-primary font-medium">전단지</a>
+                <a href="#banner" class="text-gray-600 hover:text-primary font-medium">현수막</a>
+                <a href="#business-card" class="text-gray-600 hover:text-primary font-medium">명함/기타</a>
+                <a href="#portfolio" class="text-gray-600 hover:text-primary font-medium">포트폴리오</a>
+            </nav>
+            
+            <div class="hidden md:flex items-center space-x-3">
+                <a href="tel:010-5456-7754" class="text-xl font-bold text-gray-800">010-5456-7754</a>
+                <a href="#contact" class="btn-primary px-6 py-2.5 rounded-lg font-bold text-sm">무료 견적 신청</a>
             </div>
-        </nav>
+        </div>
     </header>
-    
+
     <!-- Hero Section -->
-    <section id="home" class="hero-bg pt-24 pb-32 relative">
+    <section class="pt-32 pb-20 lg:pt-40 lg:pb-28 bg-gray-50 overflow-hidden">
         <div class="container mx-auto px-4 lg:px-8">
-            <div class="grid lg:grid-cols-2 gap-12 items-center">
-                <!-- Left Content -->
-                <div class="relative z-10" data-aos="fade-right">
-                    <div class="inline-flex items-center bg-green-100 text-green-800 px-4 py-2 rounded-full text-sm font-bold mb-6 animate-pulse-slow">
-                        <svg class="w-4 h-4 mr-2" fill="currentColor" viewBox="0 0 20 20">
-                            <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/>
-                        </svg>
-                        대전 1위 전단지·현수막 제작
-                    </div>
-                    
-                    <h1 class="text-5xl lg:text-7xl font-black text-gray-900 leading-tight mb-6">
-                        매출을 올리는<br>
-                        <span class="bg-gradient-to-r from-purple-600 via-green-600 to-orange-600 bg-clip-text text-transparent">대전전단지</span><br>
-                        <span class="bg-gradient-to-r from-green-600 to-blue-600 bg-clip-text text-transparent">대전현수막</span>
+            <div class="flex flex-col lg:flex-row items-center gap-12 lg:gap-20">
+                <div class="lg:w-1/2" data-aos="fade-right">
+                    <span class="inline-block py-1 px-3 rounded-full bg-blue-100 text-blue-700 text-sm font-bold mb-4">
+                        대전 1위 인쇄/광고 전문
+                    </span>
+                    <h1 class="text-4xl lg:text-6xl font-extrabold text-gray-900 leading-tight mb-6">
+                        매출이 오르는 <span class="text-primary">디자인</span><br>
+                        확실한 <span class="text-primary">배포 효과</span>
                     </h1>
-                    
-                    <p class="text-xl text-gray-600 mb-8 leading-relaxed">
-                        <strong class="text-gray-900">15년 경력 전문 디자이너</strong>가 만드는<br>
-                        차별화된 디자인으로 고객을 사로잡습니다.<br>
-                        <span class="text-green-600 font-bold">당일 무료 시안 제공</span> · 대전 전지역 배포
+                    <p class="text-lg text-gray-600 mb-8 leading-relaxed">
+                        전단지, 현수막, 명함, 배너까지 한 번에!<br>
+                        전문 디자이너의 <strong class="text-gray-900">무료 시안</strong>과 <strong class="text-gray-900">합리적인 가격</strong>을 경험하세요.<br>
+                        대전 전지역(유성구, 서구, 둔산동 등) 맞춤 서비스.
                     </p>
-                    
-                    <div class="flex flex-col sm:flex-row gap-4 mb-10">
-                        <a href="#contact" class="cta-primary text-white px-8 py-5 rounded-full font-bold text-lg text-center inline-flex items-center justify-center">
-                            <svg class="w-6 h-6 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 15l-2 5L9 9l11 4-5 2zm0 0l5 5M7.188 2.239l.777 2.897M5.136 7.965l-2.898-.777M13.95 4.05l-2.122 2.122m-5.657 5.656l-2.12 2.122"/>
-                            </svg>
-                            무료 디자인 시안 받기
+                    <div class="flex flex-col sm:flex-row gap-4">
+                        <a href="tel:010-5456-7754" class="btn-primary px-8 py-4 rounded-lg font-bold text-lg text-center flex items-center justify-center">
+                            <svg class="w-5 h-5 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"/></svg>
+                            010-5456-7754
                         </a>
-                        <a href="tel:010-2364-2355" class="cta-secondary text-white px-8 py-5 rounded-full font-bold text-lg text-center inline-flex items-center justify-center">
-                            <svg class="w-6 h-6 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"/>
-                            </svg>
-                            010-2364-2355
+                        <a href="#contact" class="btn-outline px-8 py-4 rounded-lg font-bold text-lg text-center">
+                            온라인 견적 문의
                         </a>
                     </div>
                     
-                    <!-- Stats -->
-                    <div class="grid grid-cols-3 gap-6">
-                        <div class="text-center">
-                            <div class="text-4xl font-black text-purple-600 counter mb-2">1,500+</div>
-                            <div class="text-sm text-gray-600 font-medium">누적 고객</div>
+                    <div class="mt-10 flex items-center space-x-6 text-sm text-gray-500">
+                        <div class="flex items-center">
+                            <svg class="w-5 h-5 text-green-500 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/></svg>
+                            당일 디자인
                         </div>
-                        <div class="text-center">
-                            <div class="text-4xl font-black text-green-600 counter mb-2">99%</div>
-                            <div class="text-sm text-gray-600 font-medium">만족도</div>
+                        <div class="flex items-center">
+                            <svg class="w-5 h-5 text-green-500 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/></svg>
+                            최저가 보장
                         </div>
-                        <div class="text-center">
-                            <div class="text-4xl font-black text-orange-600 counter mb-2">15년</div>
-                            <div class="text-sm text-gray-600 font-medium">경력</div>
+                        <div class="flex items-center">
+                            <svg class="w-5 h-5 text-green-500 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/></svg>
+                            배포 인증
                         </div>
                     </div>
                 </div>
-                
-                <!-- Right Image -->
-                <div class="relative" data-aos="fade-left">
-                    <div class="relative z-10">
-                        <img src="https://images.unsplash.com/photo-1542744173-8e7e53415bb0?w=800&h=800&fit=crop&q=80" 
-                             alt="대전전단지 제작 - 전문 디자인팀이 제작한 고품질 전단지 샘플" 
-                             class="rounded-3xl shadow-premium animate-float w-full">
+                <div class="lg:w-1/2 relative" data-aos="fade-left">
+                    <img src="https://images.unsplash.com/photo-1626785774573-4b799314344d?w=800&auto=format&fit=crop&q=60" alt="대전 전단지 디자인 작업" class="img-rounded w-full object-cover h-[500px]">
+                    <div class="absolute -bottom-6 -left-6 bg-white p-6 rounded-lg shadow-xl hidden md:block">
+                        <p class="text-3xl font-bold text-primary mb-1">1,500+</p>
+                        <p class="text-gray-600 font-medium">제작 완료 건수</p>
                     </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Product Section 1: Flyer (전단지) -->
+    <section id="flyer" class="section-padding bg-white">
+        <div class="container mx-auto px-4 lg:px-8">
+            <div class="flex flex-col lg:flex-row items-center gap-12">
+                <div class="lg:w-1/2 order-2 lg:order-1" data-aos="fade-up">
+                    <img src="https://images.unsplash.com/photo-1586023492125-27b2c045efd7?w=800&auto=format&fit=crop&q=60" alt="대전 전단지 제작 샘플" class="img-rounded w-full shadow-lg">
+                </div>
+                <div class="lg:w-1/2 order-1 lg:order-2" data-aos="fade-up">
+                    <div class="service-icon-box">
+                        <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"/></svg>
+                    </div>
+                    <h2 class="text-3xl lg:text-4xl font-bold mb-4">전단지 제작</h2>
+                    <p class="text-xl text-primary font-bold mb-6">500장 기준 60,000원부터</p>
+                    <p class="text-gray-600 mb-6 leading-relaxed">
+                        식당, 학원, 헬스장 등 업종별 특성에 맞는 맞춤형 디자인을 제공합니다. 
+                        단순한 홍보물을 넘어 매출로 이어지는 전략적인 레이아웃을 제안합니다.
+                    </p>
+                    <ul class="check-list mb-8">
+                        <li><svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/></svg>A4, A5, B5 등 다양한 사이즈 제작 가능</li>
+                        <li><svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/></svg>아트지, 모조지 등 용지 선택 가능</li>
+                        <li><svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/></svg>소량 인쇄 및 대량 인쇄 할인</li>
+                        <li><svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/></svg>아파트/상가 직투 배포 서비스 연계</li>
+                    </ul>
+                    <a href="#contact" class="btn-primary px-6 py-3 rounded-lg font-bold">전단지 견적 받기</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Product Section 2: Banner (현수막) -->
+    <section id="banner" class="section-padding bg-gray-50">
+        <div class="container mx-auto px-4 lg:px-8">
+            <div class="flex flex-col lg:flex-row items-center gap-12">
+                <div class="lg:w-1/2" data-aos="fade-up">
+                    <div class="service-icon-box">
+                        <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 21v-4m0 0V5a2 2 0 012-2h6.5l1 1H21l-3 6 3 6h-8.5l-1-1H5a2 2 0 00-2 2zm9-13.5V9"/></svg>
+                    </div>
+                    <h2 class="text-3xl lg:text-4xl font-bold mb-4">현수막 제작</h2>
+                    <p class="text-xl text-primary font-bold mb-6">1.8m 기준 30,000원부터</p>
+                    <p class="text-gray-600 mb-6 leading-relaxed">
+                        멀리서도 한눈에 들어오는 가독성 높은 현수막을 제작합니다. 
+                        오픈 이벤트, 분양 홍보, 게릴라 현수막 등 용도에 맞는 최적의 디자인과 후가공을 제공합니다.
+                    </p>
+                    <ul class="check-list mb-8">
+                        <li><svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/></svg>고해상도 실사 출력 (생생한 컬러)</li>
+                        <li><svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/></svg>각목, 큐방, 금속링 등 다양한 마감 처리</li>
+                        <li><svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/></svg>당일 제작 및 긴급 출력 가능</li>
+                        <li><svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/></svg>지정 게시대 신청 대행 가능</li>
+                    </ul>
+                    <a href="#contact" class="btn-primary px-6 py-3 rounded-lg font-bold">현수막 견적 받기</a>
+                </div>
+                <div class="lg:w-1/2" data-aos="fade-up">
+                    <img src="https://images.unsplash.com/photo-1563986768609-322da13575f3?w=800&auto=format&fit=crop&q=60" alt="대전 현수막 제작 설치" class="img-rounded w-full shadow-lg">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Product Section 3: Business Card & Etc (명함/기타) -->
+    <section id="business-card" class="section-padding bg-white">
+        <div class="container mx-auto px-4 lg:px-8">
+            <div class="text-center mb-16" data-aos="fade-up">
+                <h2 class="text-3xl lg:text-4xl font-bold mb-4">명함 · 배너 · 스티커</h2>
+                <p class="text-gray-600">비즈니스에 필요한 모든 인쇄물을 한곳에서 해결하세요.</p>
+            </div>
+            
+            <div class="grid md:grid-cols-3 gap-8">
+                <!-- Card 1: 명함 -->
+                <div class="bg-gray-50 rounded-2xl p-0 overflow-hidden hover:shadow-lg transition-shadow" data-aos="fade-up" data-aos-delay="100">
+                    <img src="https://images.unsplash.com/photo-1593642532400-2682810df593?w=600&auto=format&fit=crop&q=60" alt="고급 명함 디자인" class="w-full h-48 object-cover">
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold mb-2">프리미엄 명함</h3>
+                        <p class="text-primary font-bold mb-3">100장 10,000원~</p>
+                        <p class="text-gray-600 text-sm mb-4">
+                            고급 수입지, 박/형압 후가공으로<br>신뢰감을 주는 명함 제작
+                        </p>
+                    </div>
+                </div>
+                
+                <!-- Card 2: 배너 -->
+                <div class="bg-gray-50 rounded-2xl p-0 overflow-hidden hover:shadow-lg transition-shadow" data-aos="fade-up" data-aos-delay="200">
+                    <img src="https://images.unsplash.com/photo-1560179707-f14e90ef3dab?w=600&auto=format&fit=crop&q=60" alt="X배너 디자인" class="w-full h-48 object-cover">
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold mb-2">X배너 / 입간판</h3>
+                        <p class="text-primary font-bold mb-3">실내용 30,000원~</p>
+                        <p class="text-gray-600 text-sm mb-4">
+                            매장 입구 시선 집중!<br>물통 배너, 실내형 X배너 제작
+                        </p>
+                    </div>
+                </div>
+                
+                <!-- Card 3: 스티커/리플렛 -->
+                <div class="bg-gray-50 rounded-2xl p-0 overflow-hidden hover:shadow-lg transition-shadow" data-aos="fade-up" data-aos-delay="300">
+                    <img src="https://images.unsplash.com/photo-1629904853716-6c17e082c9e8?w=600&auto=format&fit=crop&q=60" alt="리플렛 스티커 제작" class="w-full h-48 object-cover">
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold mb-2">리플렛 · 스티커</h3>
+                        <p class="text-primary font-bold mb-3">별도 견적 문의</p>
+                        <p class="text-gray-600 text-sm mb-4">
+                            제품 라벨, 홍보용 리플렛<br>다양한 사이즈와 모양 제작
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Portfolio Gallery -->
+    <section id="portfolio" class="section-padding bg-gray-50">
+        <div class="container mx-auto px-4 lg:px-8">
+            <div class="flex justify-between items-end mb-12">
+                <div>
+                    <h2 class="text-3xl lg:text-4xl font-bold mb-2">포트폴리오</h2>
+                    <p class="text-gray-600">대전 지역 다양한 업종의 실제 제작 사례입니다.</p>
+                </div>
+            </div>
+            
+            <div class="grid grid-cols-2 md:grid-cols-4 gap-4">
+                <div class="rounded-lg overflow-hidden h-64 shadow-md group">
+                    <img src="https://images.unsplash.com/photo-1555396273-367ea4eb4db5?w=600&auto=format&fit=crop&q=60" alt="식당 전단지" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500">
+                </div>
+                <div class="rounded-lg overflow-hidden h-64 shadow-md group">
+                    <img src="https://images.unsplash.com/photo-1509062522246-3755977927d7?w=600&auto=format&fit=crop&q=60" alt="학원 전단지" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500">
+                </div>
+                <div class="rounded-lg overflow-hidden h-64 shadow-md group">
+                    <img src="https://images.unsplash.com/photo-1587614382346-4ec70e388b28?w=600&auto=format&fit=crop&q=60" alt="헬스장 전단지" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500">
+                </div>
+                <div class="rounded-lg overflow-hidden h-64 shadow-md group">
+                    <img src="https://images.unsplash.com/photo-1560518883-ce09059eeffa?w=600&auto=format&fit=crop&q=60" alt="부동산 전단지" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Form -->
+    <section id="contact" class="section-padding bg-white">
+        <div class="container mx-auto px-4 lg:px-8">
+            <div class="bg-blue-600 rounded-3xl p-8 lg:p-16 text-white shadow-2xl flex flex-col lg:flex-row gap-12">
+                <div class="lg:w-1/2">
+                    <h2 class="text-3xl lg:text-4xl font-bold mb-6">무료 디자인/견적 신청</h2>
+                    <p class="text-blue-100 text-lg mb-8">
+                        간단한 정보만 남겨주시면 전문 상담원이 10분 내로 연락드립니다.<br>
+                        궁금한 점이 있으시면 언제든 편하게 문의주세요.
+                    </p>
                     
-                    <!-- Floating Cards -->
-                    <div class="absolute -bottom-8 -left-8 glass rounded-2xl p-6 shadow-premium max-w-xs animate-float" style="animation-delay: 1s;">
-                        <div class="flex items-center space-x-4">
-                            <div class="w-14 h-14 gradient-success rounded-full flex items-center justify-center flex-shrink-0">
-                                <svg class="w-7 h-7 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/>
-                                </svg>
+                    <div class="space-y-4 mb-8">
+                        <div class="flex items-center">
+                            <div class="w-10 h-10 rounded-full bg-white/20 flex items-center justify-center mr-4">
+                                <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"/></svg>
                             </div>
-                            <div>
-                                <div class="text-2xl font-black text-gray-900">당일 제작</div>
-                                <div class="text-sm text-gray-600">긴급 주문 가능</div>
-                            </div>
+                            <span class="text-xl font-bold">010-5456-7754</span>
                         </div>
-                    </div>
-                    
-                    <div class="absolute -top-8 -right-8 glass rounded-2xl p-6 shadow-premium max-w-xs animate-float hidden lg:block" style="animation-delay: 2s;">
-                        <div class="flex items-center space-x-4">
-                            <div class="w-14 h-14 gradient-primary rounded-full flex items-center justify-center flex-shrink-0">
-                                <svg class="w-7 h-7 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8c-1.657 0-3 .895-3 2s1.343 2 3 2 3 .895 3 2-1.343 2-3 2m0-8c1.11 0 2.08.402 2.599 1M12 8V7m0 1v8m0 0v1m0-1c-1.11 0-2.08-.402-2.599-1M21 12a9 9 0 11-18 0 9 9 0 0118 0z"/>
-                                </svg>
+                        <div class="flex items-center">
+                            <div class="w-10 h-10 rounded-full bg-white/20 flex items-center justify-center mr-4">
+                                <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"/><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"/></svg>
                             </div>
-                            <div>
-                                <div class="text-2xl font-black text-gray-900">최저가</div>
-                                <div class="text-sm text-gray-600">합리적인 가격</div>
-                            </div>
+                            <span>대전 전지역 (유성구, 서구, 중구, 동구, 대덕구)</span>
                         </div>
                     </div>
                 </div>
-            </div>
-        </div>
-    </section>
-    
-    <!-- Services Section -->
-    <section id="services" class="py-24 bg-white">
-        <div class="container mx-auto px-4 lg:px-8">
-            <div class="text-center mb-16" data-aos="fade-up">
-                <div class="inline-block bg-purple-100 text-purple-800 px-4 py-2 rounded-full text-sm font-bold mb-4">
-                    핵심 서비스
-                </div>
-                <h2 class="text-4xl lg:text-6xl font-black text-gray-900 mb-6">
-                    <span class="bg-gradient-to-r from-purple-600 to-green-600 bg-clip-text text-transparent">대전전단지·현수막</span><br>
-                    제작의 모든 것
-                </h2>
-                <p class="text-xl text-gray-600 max-w-2xl mx-auto">
-                    디자인부터 인쇄, 배포까지 원스톱 서비스
-                </p>
-            </div>
-            
-            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
-                <!-- Service 1: 전단지 제작 -->
-                <div class="service-card shadow-hover" data-aos="fade-up" data-aos-delay="100">
-                    <div class="w-20 h-20 gradient-primary rounded-2xl flex items-center justify-center mb-6">
-                        <svg class="w-10 h-10 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"/>
-                        </svg>
-                    </div>
-                    <h3 class="text-2xl font-bold text-gray-900 mb-3">대전전단지 제작</h3>
-                    <p class="text-gray-600 mb-6 leading-relaxed">
-                        A4, A5, B5 등 다양한 사이즈<br>
-                        500장부터 대량까지 제작 가능<br>
-                        <strong class="text-purple-600">500장 60,000원~</strong>
-                    </p>
-                    <ul class="space-y-3">
-                        <li class="flex items-center text-sm text-gray-700">
-                            <svg class="w-5 h-5 text-green-500 mr-2 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
-                                <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/>
-                            </svg>
-                            무료 디자인 시안 제공
-                        </li>
-                        <li class="flex items-center text-sm text-gray-700">
-                            <svg class="w-5 h-5 text-green-500 mr-2 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
-                                <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/>
-                            </svg>
-                            고품질 용지 및 인쇄
-                        </li>
-                        <li class="flex items-center text-sm text-gray-700">
-                            <svg class="w-5 h-5 text-green-500 mr-2 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
-                                <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/>
-                            </svg>
-                            2-3일 제작 완료
-                        </li>
-                    </ul>
-                </div>
                 
-                <!-- Service 2: 현수막 제작 -->
-                <div class="service-card shadow-hover" data-aos="fade-up" data-aos-delay="200">
-                    <div class="w-20 h-20 gradient-success rounded-2xl flex items-center justify-center mb-6">
-                        <svg class="w-10 h-10 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 21v-4m0 0V5a2 2 0 012-2h6.5l1 1H21l-3 6 3 6h-8.5l-1-1H5a2 2 0 00-2 2zm9-13.5V9"/>
-                        </svg>
-                    </div>
-                    <h3 class="text-2xl font-bold text-gray-900 mb-3">대전현수막 제작</h3>
-                    <p class="text-gray-600 mb-6 leading-relaxed">
-                        야외용 고급 실사 출력<br>
-                        다양한 사이즈 맞춤 제작<br>
-                        <strong class="text-green-600">1.8m 30,000원~</strong>
-                    </p>
-                    <ul class="space-y-3">
-                        <li class="flex items-center text-sm text-gray-700">
-                            <svg class="w-5 h-5 text-green-500 mr-2 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
-                                <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/>
-                            </svg>
-                            방수·내구성 우수
-                        </li>
-                        <li class="flex items-center text-sm text-gray-700">
-                            <svg class="w-5 h-5 text-green-500 mr-2 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
-                                <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/>
-                            </svg>
-                            고해상도 인쇄
-                        </li>
-                        <li class="flex items-center text-sm text-gray-700">
-                            <svg class="w-5 h-5 text-green-500 mr-2 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
-                                <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/>
-                            </svg>
-                            당일 제작 가능
-                        </li>
-                    </ul>
-                </div>
-                
-                <!-- Service 3: 전단지 배포 -->
-                <div class="service-card shadow-hover" data-aos="fade-up" data-aos-delay="300">
-                    <div class="w-20 h-20 gradient-warning rounded-2xl flex items-center justify-center mb-6">
-                        <svg class="w-10 h-10 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"/>
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"/>
-                        </svg>
-                    </div>
-                    <h3 class="text-2xl font-bold text-gray-900 mb-3">전단지 배포 서비스</h3>
-                    <p class="text-gray-600 mb-6 leading-relaxed">
-                        대전 전지역 정확한 배포<br>
-                        타겟 지역 집중 배포<br>
-                        <strong class="text-orange-600">배포 인증샷 제공</strong>
-                    </p>
-                    <ul class="space-y-3">
-                        <li class="flex items-center text-sm text-gray-700">
-                            <svg class="w-5 h-5 text-green-500 mr-2 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
-                                <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/>
-                            </svg>
-                            유성구·둔산동·은행동
-                        </li>
-                        <li class="flex items-center text-sm text-gray-700">
-                            <svg class="w-5 h-5 text-green-500 mr-2 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
-                                <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/>
-                            </svg>
-                            아파트 단지 집중 배포
-                        </li>
-                        <li class="flex items-center text-sm text-gray-700">
-                            <svg class="w-5 h-5 text-green-500 mr-2 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
-                                <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/>
-                            </svg>
-                            정확한 배포 리포트
-                        </li>
-                    </ul>
-                </div>
-                
-                <!-- Service 4: 명함 제작 -->
-                <div class="service-card shadow-hover" data-aos="fade-up" data-aos-delay="100">
-                    <div class="w-20 h-20 gradient-danger rounded-2xl flex items-center justify-center mb-6">
-                        <svg class="w-10 h-10 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 10h18M7 15h1m4 0h1m-7 4h12a3 3 0 003-3V8a3 3 0 00-3-3H6a3 3 0 00-3 3v8a3 3 0 003 3z"/>
-                        </svg>
-                    </div>
-                    <h3 class="text-2xl font-bold text-gray-900 mb-3">명함 제작</h3>
-                    <p class="text-gray-600 mb-6 leading-relaxed">
-                        프리미엄 명함 제작<br>
-                        다양한 용지 및 코팅 옵션<br>
-                        <strong class="text-red-600">100장 10,000원~</strong>
-                    </p>
-                    <ul class="space-y-3">
-                        <li class="flex items-center text-sm text-gray-700">
-                            <svg class="w-5 h-5 text-green-500 mr-2 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
-                                <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/>
-                            </svg>
-                            고급 용지 선택 가능
-                        </li>
-                        <li class="flex items-center text-sm text-gray-700">
-                            <svg class="w-5 h-5 text-green-500 mr-2 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
-                                <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/>
-                            </svg>
-                            코팅/박/형압 가능
-                        </li>
-                        <li class="flex items-center text-sm text-gray-700">
-                            <svg class="w-5 h-5 text-green-500 mr-2 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
-                                <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/>
-                            </svg>
-                            2-3일 빠른 제작
-                        </li>
-                    </ul>
-                </div>
-                
-                <!-- Service 5: 리플렛/브로슈어 -->
-                <div class="service-card shadow-hover" data-aos="fade-up" data-aos-delay="200">
-                    <div class="w-20 h-20 bg-gradient-to-br from-blue-500 to-cyan-500 rounded-2xl flex items-center justify-center mb-6">
-                        <svg class="w-10 h-10 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C19.832 18.477 18.247 18 16.5 18c-1.746 0-3.332.477-4.5 1.253"/>
-                        </svg>
-                    </div>
-                    <h3 class="text-2xl font-bold text-gray-900 mb-3">리플렛·브로슈어</h3>
-                    <p class="text-gray-600 mb-6 leading-relaxed">
-                        접지형 고급 홍보물<br>
-                        2단, 3단 접지 등 다양한 형태<br>
-                        <strong class="text-blue-600">견적 문의</strong>
-                    </p>
-                    <ul class="space-y-3">
-                        <li class="flex items-center text-sm text-gray-700">
-                            <svg class="w-5 h-5 text-green-500 mr-2 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
-                                <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/>
-                            </svg>
-                            전문적인 디자인
-                        </li>
-                        <li class="flex items-center text-sm text-gray-700">
-                            <svg class="w-5 h-5 text-green-500 mr-2 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
-                                <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/>
-                            </svg>
-                            고품질 인쇄
-                        </li>
-                        <li class="flex items-center text-sm text-gray-700">
-                            <svg class="w-5 h-5 text-green-500 mr-2 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
-                                <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/>
-                            </svg>
-                            다양한 용지 선택
-                        </li>
-                    </ul>
-                </div>
-                
-                <!-- Service 6: 배너/X배너 -->
-                <div class="service-card shadow-hover" data-aos="fade-up" data-aos-delay="300">
-                    <div class="w-20 h-20 bg-gradient-to-br from-pink-500 to-rose-500 rounded-2xl flex items-center justify-center mb-6">
-                        <svg class="w-10 h-10 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 16l4.586-4.586a2 2 0 012.828 0L16 16m-2-2l1.586-1.586a2 2 0 012.828 0L20 14m-6-6h.01M6 20h12a2 2 0 002-2V6a2 2 0 00-2-2H6a2 2 0 00-2 2v12a2 2 0 002 2z"/>
-                        </svg>
-                    </div>
-                    <h3 class="text-2xl font-bold text-gray-900 mb-3">배너·X배너</h3>
-                    <p class="text-gray-600 mb-6 leading-relaxed">
-                        행사용 배너 제작<br>
-                        이동형 X배너 및 롤배너<br>
-                        <strong class="text-pink-600">견적 문의</strong>
-                    </p>
-                    <ul class="space-y-3">
-                        <li class="flex items-center text-sm text-gray-700">
-                            <svg class="w-5 h-5 text-green-500 mr-2 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
-                                <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/>
-                            </svg>
-                            이동 및 설치 간편
-                        </li>
-                        <li class="flex items-center text-sm text-gray-700">
-                            <svg class="w-5 h-5 text-green-500 mr-2 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
-                                <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/>
-                            </svg>
-                            재사용 가능
-                        </li>
-                        <li class="flex items-center text-sm text-gray-700">
-                            <svg class="w-5 h-5 text-green-500 mr-2 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
-                                <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/>
-                            </svg>
-                            빠른 제작
-                        </li>
-                    </ul>
-                </div>
-            </div>
-        </div>
-    </section>
-    
-    <!-- Portfolio Section -->
-    <section id="portfolio" class="py-24 bg-gray-50">
-        <div class="container mx-auto px-4 lg:px-8">
-            <div class="text-center mb-16" data-aos="fade-up">
-                <div class="inline-block bg-green-100 text-green-800 px-4 py-2 rounded-full text-sm font-bold mb-4">
-                    포트폴리오
-                </div>
-                <h2 class="text-4xl lg:text-6xl font-black text-gray-900 mb-6">
-                    실제 제작 사례로<br>
-                    <span class="bg-gradient-to-r from-green-600 to-blue-600 bg-clip-text text-transparent">차이를 확인하세요</span>
-                </h2>
-                <p class="text-xl text-gray-600">대전 지역 1,500+ 고객사 제작 실적</p>
-            </div>
-            
-            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
-                <!-- Portfolio Item 1 -->
-                <div class="img-hover shadow-premium" data-aos="fade-up" data-aos-delay="100">
-                    <img src="https://images.unsplash.com/photo-1586023492125-27b2c045efd7?w=600&h=800&fit=crop&q=80" 
-                         alt="대전 식당 전단지 제작 사례 - 고급 레스토랑 홍보 전단지" 
-                         class="w-full h-96 object-cover">
-                    <div class="p-6 bg-white">
-                        <div class="text-sm text-green-600 font-bold mb-2">식당·카페</div>
-                        <h3 class="text-xl font-bold text-gray-900 mb-2">프리미엄 레스토랑 전단지</h3>
-                        <p class="text-gray-600 text-sm">둔산동 고급 레스토랑 A4 전단지</p>
-                    </div>
-                </div>
-                
-                <!-- Portfolio Item 2 -->
-                <div class="img-hover shadow-premium" data-aos="fade-up" data-aos-delay="200">
-                    <img src="https://images.unsplash.com/photo-1513151233558-d860c5398176?w=600&h=800&fit=crop&q=80" 
-                         alt="대전 학원 전단지 제작 - 수학 학원 홍보물 디자인" 
-                         class="w-full h-96 object-cover">
-                    <div class="p-6 bg-white">
-                        <div class="text-sm text-purple-600 font-bold mb-2">학원·교육</div>
-                        <h3 class="text-xl font-bold text-gray-900 mb-2">학원 신규 개원 전단지</h3>
-                        <p class="text-gray-600 text-sm">유성구 수학 전문 학원 A5 전단지</p>
-                    </div>
-                </div>
-                
-                <!-- Portfolio Item 3 -->
-                <div class="img-hover shadow-premium" data-aos="fade-up" data-aos-delay="300">
-                    <img src="https://images.unsplash.com/photo-1522337360788-8b13dee7a37e?w=600&h=800&fit=crop&q=80" 
-                         alt="대전현수막 제작 사례 - 그랜드 오픈 현수막" 
-                         class="w-full h-96 object-cover">
-                    <div class="p-6 bg-white">
-                        <div class="text-sm text-orange-600 font-bold mb-2">현수막</div>
-                        <h3 class="text-xl font-bold text-gray-900 mb-2">그랜드 오픈 현수막</h3>
-                        <p class="text-gray-600 text-sm">은행동 신규 매장 개업 현수막 3m</p>
-                    </div>
-                </div>
-                
-                <!-- Portfolio Item 4 -->
-                <div class="img-hover shadow-premium" data-aos="fade-up" data-aos-delay="100">
-                    <img src="https://images.unsplash.com/photo-1559056199-641a0ac8b55e?w=600&h=800&fit=crop&q=80" 
-                         alt="대전 뷰티샵 전단지 - 헤어살롱 프로모션 전단지" 
-                         class="w-full h-96 object-cover">
-                    <div class="p-6 bg-white">
-                        <div class="text-sm text-pink-600 font-bold mb-2">뷰티·병원</div>
-                        <h3 class="text-xl font-bold text-gray-900 mb-2">헤어살롱 프로모션 전단지</h3>
-                        <p class="text-gray-600 text-sm">둔산동 프리미엄 헤어샵 전단지</p>
-                    </div>
-                </div>
-                
-                <!-- Portfolio Item 5 -->
-                <div class="img-hover shadow-premium" data-aos="fade-up" data-aos-delay="200">
-                    <img src="https://images.unsplash.com/photo-1560518883-ce09059eeffa?w=600&h=800&fit=crop&q=80" 
-                         alt="대전 부동산 전단지 제작 - 아파트 분양 홍보" 
-                         class="w-full h-96 object-cover">
-                    <div class="p-6 bg-white">
-                        <div class="text-sm text-blue-600 font-bold mb-2">부동산</div>
-                        <h3 class="text-xl font-bold text-gray-900 mb-2">아파트 분양 전단지</h3>
-                        <p class="text-gray-600 text-sm">대전 신축 아파트 분양 전단지</p>
-                    </div>
-                </div>
-                
-                <!-- Portfolio Item 6 -->
-                <div class="img-hover shadow-premium" data-aos="fade-up" data-aos-delay="300">
-                    <img src="https://images.unsplash.com/photo-1540575467063-178a50c2df87?w=600&h=800&fit=crop&q=80" 
-                         alt="대전 피트니스 전단지 - 헬스장 회원 모집 홍보" 
-                         class="w-full h-96 object-cover">
-                    <div class="p-6 bg-white">
-                        <div class="text-sm text-red-600 font-bold mb-2">피트니스·스포츠</div>
-                        <h3 class="text-xl font-bold text-gray-900 mb-2">헬스장 회원모집 전단지</h3>
-                        <p class="text-gray-600 text-sm">유성구 프리미엄 피트니스센터</p>
-                    </div>
-                </div>
-            </div>
-            
-            <div class="text-center mt-12" data-aos="fade-up">
-                <a href="#contact" class="cta-primary inline-flex items-center text-white px-8 py-4 rounded-full font-bold text-lg">
-                    내 업종 맞춤 디자인 상담받기
-                    <svg class="w-5 h-5 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/>
-                    </svg>
-                </a>
-            </div>
-        </div>
-    </section>
-    
-    <!-- Process Section -->
-    <section id="process" class="py-24 bg-white">
-        <div class="container mx-auto px-4 lg:px-8">
-            <div class="text-center mb-16" data-aos="fade-up">
-                <div class="inline-block bg-orange-100 text-orange-800 px-4 py-2 rounded-full text-sm font-bold mb-4">
-                    제작 프로세스
-                </div>
-                <h2 class="text-4xl lg:text-6xl font-black text-gray-900 mb-6">
-                    간단한 <span class="bg-gradient-to-r from-orange-600 to-red-600 bg-clip-text text-transparent">4단계</span>로<br>
-                    완벽한 결과물을
-                </h2>
-            </div>
-            
-            <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-8 max-w-6xl mx-auto">
-                <!-- Step 1 -->
-                <div class="text-center" data-aos="fade-up" data-aos-delay="100">
-                    <div class="w-24 h-24 gradient-primary rounded-full flex items-center justify-center mx-auto mb-6 shadow-premium">
-                        <span class="text-4xl font-black text-white">1</span>
-                    </div>
-                    <h3 class="text-2xl font-bold text-gray-900 mb-3">상담 신청</h3>
-                    <p class="text-gray-600 leading-relaxed">
-                        전화 또는 온라인으로<br>
-                        간단히 상담 신청<br>
-                        <strong class="text-purple-600">10분 내 연락</strong>
-                    </p>
-                </div>
-                
-                <!-- Step 2 -->
-                <div class="text-center" data-aos="fade-up" data-aos-delay="200">
-                    <div class="w-24 h-24 gradient-success rounded-full flex items-center justify-center mx-auto mb-6 shadow-premium">
-                        <span class="text-4xl font-black text-white">2</span>
-                    </div>
-                    <h3 class="text-2xl font-bold text-gray-900 mb-3">무료 시안</h3>
-                    <p class="text-gray-600 leading-relaxed">
-                        업종과 목적에 맞는<br>
-                        맞춤형 디자인 시안<br>
-                        <strong class="text-green-600">당일 제공</strong>
-                    </p>
-                </div>
-                
-                <!-- Step 3 -->
-                <div class="text-center" data-aos="fade-up" data-aos-delay="300">
-                    <div class="w-24 h-24 gradient-warning rounded-full flex items-center justify-center mx-auto mb-6 shadow-premium">
-                        <span class="text-4xl font-black text-white">3</span>
-                    </div>
-                    <h3 class="text-2xl font-bold text-gray-900 mb-3">인쇄 제작</h3>
-                    <p class="text-gray-600 leading-relaxed">
-                        고품질 인쇄로<br>
-                        정확하게 제작<br>
-                        <strong class="text-orange-600">2-3일 완료</strong>
-                    </p>
-                </div>
-                
-                <!-- Step 4 -->
-                <div class="text-center" data-aos="fade-up" data-aos-delay="400">
-                    <div class="w-24 h-24 gradient-danger rounded-full flex items-center justify-center mx-auto mb-6 shadow-premium">
-                        <span class="text-4xl font-black text-white">4</span>
-                    </div>
-                    <h3 class="text-2xl font-bold text-gray-900 mb-3">배송·배포</h3>
-                    <p class="text-gray-600 leading-relaxed">
-                        배송 또는 직접 배포<br>
-                        정확한 지역에<br>
-                        <strong class="text-red-600">확실하게 전달</strong>
-                    </p>
-                </div>
-            </div>
-        </div>
-    </section>
-    
-    <!-- CTA Section -->
-    <section class="py-24 gradient-primary relative overflow-hidden">
-        <div class="absolute inset-0 opacity-10">
-            <div class="absolute top-0 left-0 w-96 h-96 bg-white rounded-full blur-3xl"></div>
-            <div class="absolute bottom-0 right-0 w-96 h-96 bg-white rounded-full blur-3xl"></div>
-        </div>
-        
-        <div class="container mx-auto px-4 lg:px-8 relative z-10">
-            <div class="max-w-4xl mx-auto text-center" data-aos="fade-up">
-                <h2 class="text-4xl lg:text-6xl font-black text-white mb-6 leading-tight">
-                    지금 신청하시면<br>
-                    <span class="text-yellow-300">무료 디자인 시안</span>을<br>
-                    당일 받아보실 수 있습니다!
-                </h2>
-                <p class="text-xl text-white mb-10 opacity-90">
-                    대전전단지·대전현수막 제작의 모든 것<br>
-                    15년 경력 전문가가 책임집니다
-                </p>
-                
-                <div class="flex flex-col sm:flex-row gap-4 justify-center">
-                    <a href="#contact" class="bg-white text-purple-600 px-10 py-5 rounded-full font-black text-xl shadow-2xl hover:scale-105 transition inline-flex items-center justify-center">
-                        <svg class="w-6 h-6 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 15l-2 5L9 9l11 4-5 2zm0 0l5 5M7.188 2.239l.777 2.897M5.136 7.965l-2.898-.777M13.95 4.05l-2.122 2.122m-5.657 5.656l-2.12 2.122"/>
-                        </svg>
-                        무료 시안 신청하기
-                    </a>
-                    <a href="tel:010-2364-2355" class="bg-yellow-400 text-gray-900 px-10 py-5 rounded-full font-black text-xl shadow-2xl hover:scale-105 transition inline-flex items-center justify-center">
-                        <svg class="w-6 h-6 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 006.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"/>
-                        </svg>
-                        010-2364-2355
-                    </a>
-                </div>
-            </div>
-        </div>
-    </section>
-    
-    <!-- Contact Form Section -->
-    <section id="contact" class="py-24 bg-gray-50">
-        <div class="container mx-auto px-4 lg:px-8">
-            <div class="max-w-4xl mx-auto">
-                <div class="text-center mb-12" data-aos="fade-up">
-                    <div class="inline-block bg-green-100 text-green-800 px-4 py-2 rounded-full text-sm font-bold mb-4">
-                        무료 상담 신청
-                    </div>
-                    <h2 class="text-4xl lg:text-6xl font-black text-gray-900 mb-6">
-                        지금 바로 <span class="bg-gradient-to-r from-green-600 to-blue-600 bg-clip-text text-transparent">무료</span><br>
-                        디자인 시안 받으세요
-                    </h2>
-                    <p class="text-xl text-gray-600 mb-4">10분 내 전문 디자이너가 연락드립니다</p>
-                    <div class="inline-flex items-center bg-green-50 border-2 border-green-200 text-green-800 px-6 py-3 rounded-full font-bold">
-                        <svg class="w-5 h-5 mr-2 text-green-600" fill="currentColor" viewBox="0 0 20 20">
-                            <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/>
-                        </svg>
-                        오늘 신청하면 무료 시안 100% 제공!
-                    </div>
-                </div>
-                
-                <div class="glass rounded-3xl p-8 lg:p-12 shadow-premium" data-aos="fade-up" data-aos-delay="100">
-                    <form action="https://formspree.io/f/xpwkndld" method="POST" id="contactForm" class="space-y-6">
-                        <div class="grid md:grid-cols-2 gap-6">
+                <div class="lg:w-1/2 bg-white rounded-2xl p-8 text-gray-800">
+                    <form action="https://formspree.io/f/xpwkndld" method="POST" id="quoteForm" class="space-y-4">
+                        <div class="grid grid-cols-2 gap-4">
                             <div>
-                                <label for="company" class="block text-sm font-bold text-gray-900 mb-2">업체명 *</label>
-                                <input 
-                                    type="text" 
-                                    id="company" 
-                                    name="company" 
-                                    required 
-                                    placeholder="예) 맛있는 식당"
-                                    class="form-input w-full px-5 py-4 rounded-xl bg-white"
-                                >
+                                <label class="block text-sm font-bold mb-1">업체명</label>
+                                <input type="text" name="company" class="w-full border-gray-300 rounded-lg bg-gray-50 px-4 py-3 focus:ring-2 focus:ring-blue-500 outline-none" placeholder="상호명 입력" required>
                             </div>
-                            
                             <div>
-                                <label for="name" class="block text-sm font-bold text-gray-900 mb-2">담당자명 *</label>
-                                <input 
-                                    type="text" 
-                                    id="name" 
-                                    name="name" 
-                                    required 
-                                    placeholder="예) 홍길동"
-                                    class="form-input w-full px-5 py-4 rounded-xl bg-white"
-                                >
+                                <label class="block text-sm font-bold mb-1">담당자</label>
+                                <input type="text" name="name" class="w-full border-gray-300 rounded-lg bg-gray-50 px-4 py-3 focus:ring-2 focus:ring-blue-500 outline-none" placeholder="이름 입력" required>
                             </div>
                         </div>
                         
                         <div>
-                            <label for="phone" class="block text-sm font-bold text-gray-900 mb-2">연락처 *</label>
-                            <input 
-                                type="tel" 
-                                id="phone" 
-                                name="phone" 
-                                required 
-                                placeholder="010-1234-5678"
-                                pattern="[0-9]{2,3}-[0-9]{3,4}-[0-9]{4}"
-                                class="form-input w-full px-5 py-4 rounded-xl bg-white"
-                            >
-                            <p class="text-sm text-gray-500 mt-2">형식: 010-1234-5678</p>
+                            <label class="block text-sm font-bold mb-1">연락처</label>
+                            <input type="tel" name="phone" id="phone" class="w-full border-gray-300 rounded-lg bg-gray-50 px-4 py-3 focus:ring-2 focus:ring-blue-500 outline-none" placeholder="010-0000-0000" required>
                         </div>
                         
                         <div>
-                            <label class="block text-sm font-bold text-gray-900 mb-3">서비스 유형 * (중복 선택 가능)</label>
-                            <div class="grid grid-cols-2 md:grid-cols-3 gap-3">
-                                <label class="flex items-center bg-white p-4 rounded-xl border-2 border-gray-200 hover:border-green-500 cursor-pointer transition">
-                                    <input type="checkbox" name="service_type" value="전단지" class="mr-3 w-5 h-5 text-green-600 rounded">
-                                    <span class="font-semibold">전단지</span>
-                                </label>
-                                <label class="flex items-center bg-white p-4 rounded-xl border-2 border-gray-200 hover:border-green-500 cursor-pointer transition">
-                                    <input type="checkbox" name="service_type" value="현수막" class="mr-3 w-5 h-5 text-green-600 rounded">
-                                    <span class="font-semibold">현수막</span>
-                                </label>
-                                <label class="flex items-center bg-white p-4 rounded-xl border-2 border-gray-200 hover:border-green-500 cursor-pointer transition">
-                                    <input type="checkbox" name="service_type" value="명함" class="mr-3 w-5 h-5 text-green-600 rounded">
-                                    <span class="font-semibold">명함</span>
-                                </label>
-                                <label class="flex items-center bg-white p-4 rounded-xl border-2 border-gray-200 hover:border-green-500 cursor-pointer transition">
-                                    <input type="checkbox" name="service_type" value="리플렛" class="mr-3 w-5 h-5 text-green-600 rounded">
-                                    <span class="font-semibold">리플렛</span>
-                                </label>
-                                <label class="flex items-center bg-white p-4 rounded-xl border-2 border-gray-200 hover:border-green-500 cursor-pointer transition">
-                                    <input type="checkbox" name="service_type" value="배너" class="mr-3 w-5 h-5 text-green-600 rounded">
-                                    <span class="font-semibold">배너</span>
-                                </label>
-                                <label class="flex items-center bg-white p-4 rounded-xl border-2 border-gray-200 hover:border-green-500 cursor-pointer transition">
-                                    <input type="checkbox" name="service_type" value="기타" class="mr-3 w-5 h-5 text-green-600 rounded">
-                                    <span class="font-semibold">기타</span>
-                                </label>
+                            <label class="block text-sm font-bold mb-2">제작 품목</label>
+                            <div class="flex gap-4">
+                                <label class="flex items-center"><input type="checkbox" name="service" value="전단지" class="mr-2 accent-blue-600">전단지</label>
+                                <label class="flex items-center"><input type="checkbox" name="service" value="현수막" class="mr-2 accent-blue-600">현수막</label>
+                                <label class="flex items-center"><input type="checkbox" name="service" value="명함/기타" class="mr-2 accent-blue-600">명함/기타</label>
                             </div>
                         </div>
                         
                         <div>
-                            <label for="message" class="block text-sm font-bold text-gray-900 mb-2">문의내용</label>
-                            <textarea 
-                                id="message" 
-                                name="message" 
-                                rows="5" 
-                                placeholder="예) 둔산동에서 치킨집을 운영하고 있습니다. 전단지 5000장 제작 및 인근 아파트 단지에 배포 원합니다. 견적 부탁드립니다."
-                                class="form-input w-full px-5 py-4 rounded-xl bg-white resize-none"
-                            ></textarea>
+                            <label class="block text-sm font-bold mb-1">문의 내용</label>
+                            <textarea name="message" rows="3" class="w-full border-gray-300 rounded-lg bg-gray-50 px-4 py-3 focus:ring-2 focus:ring-blue-500 outline-none resize-none" placeholder="예) 전단지 4000장 견적 궁금합니다."></textarea>
                         </div>
                         
-                        <div class="bg-white rounded-xl p-5 border-2 border-gray-200">
-                            <div class="flex items-start">
-                                <input type="checkbox" id="privacy" required class="mt-1 mr-3 w-5 h-5 text-green-600 rounded">
-                                <label for="privacy" class="text-sm text-gray-700 leading-relaxed">
-                                    <strong class="text-gray-900">[필수]</strong> 개인정보 수집 및 이용에 동의합니다. 
-                                    (수집 항목: 업체명, 담당자명, 연락처 / 이용 목적: 상담 및 견적 제공 / 보유 기간: 상담 완료 후 1년)
-                                </label>
-                            </div>
-                        </div>
-                        
-                        <button 
-                            type="submit" 
-                            class="w-full cta-primary text-white py-6 rounded-full font-black text-xl shadow-2xl"
-                        >
-                            <span class="flex items-center justify-center">
-                                <svg class="w-6 h-6 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 15l-2 5L9 9l11 4-5 2zm0 0l5 5M7.188 2.239l.777 2.897M5.136 7.965l-2.898-.777M13.95 4.05l-2.122 2.122m-5.657 5.656l-2.12 2.122"/>
-                                </svg>
-                                무료 디자인 시안 신청하기
-                            </span>
-                        </button>
-                        
-                        <div class="text-center">
-                            <p class="text-gray-600 mb-4">또는 바로 전화 문의하세요</p>
-                            <a href="tel:010-2364-2355" class="cta-secondary inline-flex items-center text-white px-8 py-4 rounded-full font-bold text-lg shadow-xl">
-                                <svg class="w-5 h-5 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"/>
-                                </svg>
-                                010-2364-2355 (즉시 연결)
-                            </a>
-                        </div>
+                        <button type="submit" class="w-full bg-black text-white font-bold py-4 rounded-lg hover:bg-gray-800 transition">무료 견적 신청하기</button>
                     </form>
-                    
-                    <div id="formMessage" class="hidden mt-6 p-4 rounded-xl text-center font-bold"></div>
                 </div>
             </div>
         </div>
     </section>
-    
-    <!-- FAQ Section -->
-    <section class="py-24 bg-white">
-        <div class="container mx-auto px-4 lg:px-8">
-            <div class="max-w-4xl mx-auto">
-                <div class="text-center mb-12" data-aos="fade-up">
-                    <div class="inline-block bg-blue-100 text-blue-800 px-4 py-2 rounded-full text-sm font-bold mb-4">
-                        자주 묻는 질문
-                    </div>
-                    <h2 class="text-4xl lg:text-6xl font-black text-gray-900 mb-6">
-                        궁금하신 점이<br>
-                        <span class="bg-gradient-to-r from-blue-600 to-purple-600 bg-clip-text text-transparent">있으신가요?</span>
-                    </h2>
-                </div>
-                
-                <div class="space-y-6">
-                    <div class="testimonial bg-white rounded-2xl p-8 shadow-hover" data-aos="fade-up">
-                        <h3 class="text-xl font-bold text-gray-900 mb-4 flex items-start">
-                            <span class="text-green-600 mr-3 text-2xl flex-shrink-0">Q.</span>
-                            <span>대전전단지 제작 비용은 얼마인가요?</span>
-                        </h3>
-                        <p class="ml-10 text-gray-700 leading-relaxed">
-                            <strong class="text-green-600">A.</strong> 대전전단지는 <strong>500장 기준 60,000원부터</strong> 시작합니다. 
-                            수량과 용지, 사이즈에 따라 가격이 달라지며 무료 견적을 제공해 드립니다. 
-                            대량 주문 시 추가 할인 혜택이 있습니다.
-                        </p>
-                    </div>
-                    
-                    <div class="testimonial bg-white rounded-2xl p-8 shadow-hover" data-aos="fade-up" data-aos-delay="100">
-                        <h3 class="text-xl font-bold text-gray-900 mb-4 flex items-start">
-                            <span class="text-green-600 mr-3 text-2xl flex-shrink-0">Q.</span>
-                            <span>대전현수막 제작 기간은 얼마나 걸리나요?</span>
-                        </h3>
-                        <p class="ml-10 text-gray-700 leading-relaxed">
-                            <strong class="text-green-600">A.</strong> 대전현수막은 디자인 확정 후 <strong>1-2일 내 제작 완료</strong>됩니다. 
-                            급하신 경우 <strong class="text-orange-600">당일 제작</strong>도 가능하니 문의 주시기 바랍니다.
-                        </p>
-                    </div>
-                    
-                    <div class="testimonial bg-white rounded-2xl p-8 shadow-hover" data-aos="fade-up" data-aos-delay="200">
-                        <h3 class="text-xl font-bold text-gray-900 mb-4 flex items-start">
-                            <span class="text-green-600 mr-3 text-2xl flex-shrink-0">Q.</span>
-                            <span>유성구, 둔산동 지역 배포도 가능한가요?</span>
-                        </h3>
-                        <p class="ml-10 text-gray-700 leading-relaxed">
-                            <strong class="text-green-600">A.</strong> 네, <strong class="text-purple-600">유성구, 둔산동, 은행동</strong> 등 
-                            대전 전지역 배포가 가능합니다. 타겟 지역을 정해주시면 정확하게 배포해 드리며 
-                            배포 완료 후 <strong>인증 사진</strong>도 제공해 드립니다.
-                        </p>
-                    </div>
-                    
-                    <div class="testimonial bg-white rounded-2xl p-8 shadow-hover" data-aos="fade-up" data-aos-delay="300">
-                        <h3 class="text-xl font-bold text-gray-900 mb-4 flex items-start">
-                            <span class="text-green-600 mr-3 text-2xl flex-shrink-0">Q.</span>
-                            <span>디자인 시안은 정말 무료인가요?</span>
-                        </h3>
-                        <p class="ml-10 text-gray-700 leading-relaxed">
-                            <strong class="text-green-600">A.</strong> 네, <strong class="text-green-600">100% 무료</strong>입니다. 
-                            상담 신청 후 전문 디자이너가 업종과 목적에 맞는 맞춤형 시안을 무료로 제작해 드립니다. 
-                            시안이 마음에 들지 않으시면 제작을 진행하지 않으셔도 되며, 비용은 일체 청구되지 않습니다.
-                        </p>
-                    </div>
-                    
-                    <div class="testimonial bg-white rounded-2xl p-8 shadow-hover" data-aos="fade-up" data-aos-delay="400">
-                        <h3 class="text-xl font-bold text-gray-900 mb-4 flex items-start">
-                            <span class="text-green-600 mr-3 text-2xl flex-shrink-0">Q.</span>
-                            <span>결제 방법은 어떻게 되나요?</span>
-                        </h3>
-                        <p class="ml-10 text-gray-700 leading-relaxed">
-                            <strong class="text-green-600">A.</strong> 계좌이체, 카드결제, 현금 모두 가능합니다. 
-                            세금계산서 발행도 가능하며, 대전 지역 소상공인 대상 <strong class="text-orange-600">특별 할인</strong>도 진행 중입니다.
-                        </p>
-                    </div>
-                </div>
-                
-                <div class="text-center mt-12" data-aos="fade-up">
-                    <p class="text-gray-600 mb-6 text-lg">더 궁금하신 점이 있으신가요?</p>
-                    <a href="#contact" class="cta-primary inline-flex items-center text-white px-8 py-4 rounded-full font-bold text-lg">
-                        무료 상담 신청하기
-                        <svg class="w-5 h-5 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/>
-                        </svg>
-                    </a>
-                </div>
-            </div>
-        </div>
-    </section>
-    
+
     <!-- Footer -->
-    <footer class="bg-gray-900 text-white py-16">
+    <footer class="bg-gray-900 text-gray-400 py-12 pb-24 md:pb-12">
         <div class="container mx-auto px-4 lg:px-8">
-            <div class="grid md:grid-cols-4 gap-12 mb-12">
-                <div class="md:col-span-2">
-                    <div class="flex items-center space-x-2 mb-6">
-                        <div class="w-12 h-12 gradient-primary rounded-lg flex items-center justify-center">
-                            <svg class="w-7 h-7 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M7 21a4 4 0 01-4-4V5a2 2 0 012-2h4a2 2 0 012 2v12a4 4 0 01-4 4zm0 0h12a2 2 0 002-2v-4a2 2 0 00-2-2h-2.343M11 7.343l1.657-1.657a2 2 0 012.828 0l2.829 2.829a2 2 0 010 2.828l-8.486 8.485M7 17h.01"/>
-                            </svg>
-                        </div>
-                        <span class="text-2xl font-bold bg-gradient-to-r from-purple-400 to-green-400 bg-clip-text text-transparent">대전디자인프린트</span>
-                    </div>
-                    <p class="text-gray-400 leading-relaxed mb-6">
-                        대전전단지 제작 및 대전현수막 제작 전문업체<br>
-                        15년 경력 전문 디자이너가 만드는 차별화된 디자인<br>
-                        디자인부터 인쇄, 배포까지 원스톱 서비스
+            <div class="grid md:grid-cols-3 gap-8 mb-8">
+                <div>
+                    <h3 class="text-white text-xl font-bold mb-4">대전디자인</h3>
+                    <p class="text-sm leading-relaxed">
+                        고객의 성공을 돕는 파트너.<br>
+                        대전 최고의 인쇄 광고 제작소입니다.<br>
+                        디자인부터 인쇄, 배포까지 책임집니다.
                     </p>
-                    <div class="flex space-x-4">
-                        <a href="#" class="w-10 h-10 bg-gray-800 rounded-full flex items-center justify-center hover:bg-green-600 transition">
-                            <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24"><path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/></svg>
-                        </a>
-                        <a href="#" class="w-10 h-10 bg-gray-800 rounded-full flex items-center justify-center hover:bg-green-600 transition">
-                            <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/></svg>
-                        </a>
-                        <a href="#" class="w-10 h-10 bg-gray-800 rounded-full flex items-center justify-center hover:bg-green-600 transition">
-                            <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24"><path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/></svg>
-                        </a>
-                    </div>
                 </div>
-                
                 <div>
-                    <h4 class="font-bold text-lg mb-4 text-white">서비스</h4>
-                    <ul class="space-y-3 text-gray-400">
-                        <li><a href="#services" class="hover:text-green-400 transition">대전전단지 제작</a></li>
-                        <li><a href="#services" class="hover:text-green-400 transition">대전현수막 제작</a></li>
-                        <li><a href="#services" class="hover:text-green-400 transition">전단지 배포</a></li>
-                        <li><a href="#services" class="hover:text-green-400 transition">명함 제작</a></li>
-                        <li><a href="#services" class="hover:text-green-400 transition">리플렛·브로슈어</a></li>
-                    </ul>
+                    <h4 class="text-white font-bold mb-4">Contact Info</h4>
+                    <p class="mb-2">전화: <a href="tel:010-5456-7754" class="text-white hover:text-blue-400">010-5456-7754</a></p>
+                    <p class="mb-2">지역: 대전광역시 전지역</p>
+                    <p>시간: 09:00 - 19:00 (연중무휴 상담)</p>
                 </div>
-                
                 <div>
-                    <h4 class="font-bold text-lg mb-4 text-white">Contact</h4>
-                    <ul class="space-y-3">
-                        <li class="flex items-center text-gray-400">
-                            <svg class="w-5 h-5 mr-3 text-green-500 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
-                                <path d="M2 3a1 1 0 011-1h2.153a1 1 0 01.986.836l.74 4.435a1 1 0 01-.54 1.06l-1.548.773a11.037 11.037 0 006.105 6.105l.774-1.548a1 1 0 011.059-.54l4.435.74a1 1 0 01.836.986V17a1 1 0 01-1 1h-2C7.82 18 2 12.18 2 5V3z"/>
-                            </svg>
-                            <a href="tel:010-2364-2355" class="hover:text-green-400 transition">010-2364-2355</a>
-                        </li>
-                        <li class="flex items-start text-gray-400">
-                            <svg class="w-5 h-5 mr-3 text-green-500 flex-shrink-0 mt-0.5" fill="currentColor" viewBox="0 0 20 20">
-                                <path fill-rule="evenodd" d="M5.05 4.05a7 7 0 119.9 9.9L10 18.9l-4.95-4.95a7 7 0 010-9.9zM10 11a2 2 0 100-4 2 2 0 000 4z" clip-rule="evenodd"/>
-                            </svg>
-                            <span>대전광역시 전지역<br>유성구·서구·중구·동구·대덕구</span>
-                        </li>
-                        <li class="flex items-center text-gray-400">
-                            <svg class="w-5 h-5 mr-3 text-green-500 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
-                                <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm1-12a1 1 0 10-2 0v4a1 1 0 00.293.707l2.828 2.829a1 1 0 101.415-1.415L11 9.586V6z" clip-rule="evenodd"/>
-                            </svg>
-                            <span>평일 09:00 - 18:00<br>토요일 09:00 - 15:00</span>
-                        </li>
+                    <h4 class="text-white font-bold mb-4">Quick Links</h4>
+                    <ul class="space-y-2">
+                        <li><a href="#flyer" class="hover:text-white">전단지 제작</a></li>
+                        <li><a href="#banner" class="hover:text-white">현수막 제작</a></li>
+                        <li><a href="#business-card" class="hover:text-white">명함 제작</a></li>
+                        <li><a href="#contact" class="hover:text-white">견적 문의</a></li>
                     </ul>
                 </div>
             </div>
-            
-            <div class="border-t border-gray-800 pt-8">
-                <div class="flex flex-col md:flex-row justify-between items-center text-gray-500 text-sm">
-                    <p class="mb-4 md:mb-0">
-                        © 2024 대전디자인프린트. All rights reserved.
-                    </p>
-                    <div class="flex space-x-6">
-                        <a href="#" class="hover:text-green-400 transition">개인정보처리방침</a>
-                        <a href="#" class="hover:text-green-400 transition">이용약관</a>
-                    </div>
-                </div>
-                <p class="text-gray-600 text-xs mt-4 text-center md:text-left">
-                    대전전단지, 대전현수막, 유성구전단지, 둔산동전단지, 은행동현수막 제작 전문
-                </p>
+            <div class="border-t border-gray-800 pt-8 text-center text-sm">
+                &copy; 2024 대전디자인. All rights reserved.
             </div>
         </div>
     </footer>
-    
-    <!-- AOS JS -->
+
+    <!-- Mobile Sticky CTA -->
+    <div class="mobile-sticky-cta">
+        <a href="tel:010-5456-7754" class="bg-blue-600 text-white flex items-center justify-center">
+            <svg class="w-5 h-5 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"/></svg>
+            전화 상담
+        </a>
+        <a href="#contact" class="bg-gray-800 text-white flex items-center justify-center">
+            견적 문의
+        </a>
+    </div>
+
+    <!-- AOS Script -->
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-    
-    <!-- Custom JavaScript -->
     <script>
-        // Initialize AOS
         AOS.init({
             duration: 800,
-            easing: 'ease-in-out',
             once: true,
             offset: 100
         });
-        
-        // Sticky Header Scroll Effect
-        const header = document.querySelector('.sticky-header');
-        window.addEventListener('scroll', () => {
-            if (window.scrollY > 50) {
-                header.classList.add('scrolled');
-            } else {
-                header.classList.remove('scrolled');
-            }
+
+        // Phone Formatting
+        document.getElementById('phone').addEventListener('input', function (e) {
+            var x = e.target.value.replace(/\D/g, '').match(/(\d{0,3})(\d{0,4})(\d{0,4})/);
+            e.target.value = !x[2] ? x[1] : '(' + x[1] + ') ' + x[2] + (x[3] ? '-' + x[3] : '');
         });
-        
+
         // Smooth Scroll
         document.querySelectorAll('a[href^="#"]').forEach(anchor => {
             anchor.addEventListener('click', function (e) {
-                const href = this.getAttribute('href');
-                if (href !== '#' && href !== '') {
-                    e.preventDefault();
-                    const target = document.querySelector(href);
-                    if (target) {
-                        const offsetTop = target.offsetTop - 80;
-                        window.scrollTo({
-                            top: offsetTop,
-                            behavior: 'smooth'
-                        });
-                    }
-                }
-            });
-        });
-        
-        // Form Validation
-        const contactForm = document.getElementById('contactForm');
-        const formMessage = document.getElementById('formMessage');
-        
-        contactForm.addEventListener('submit', function(e) {
-            const serviceTypes = document.querySelectorAll('input[name="service_type"]:checked');
-            
-            if (serviceTypes.length === 0) {
                 e.preventDefault();
-                showMessage('서비스 유형을 최소 1개 이상 선택해주세요.', 'error');
-                return false;
-            }
-            
-            showMessage('전송 중입니다...', 'info');
-        });
-        
-        function showMessage(message, type) {
-            formMessage.textContent = message;
-            formMessage.classList.remove('hidden');
-            
-            if (type === 'success') {
-                formMessage.className = 'mt-6 p-4 rounded-xl text-center font-bold bg-green-100 text-green-800';
-            } else if (type === 'error') {
-                formMessage.className = 'mt-6 p-4 rounded-xl text-center font-bold bg-red-100 text-red-800';
-            } else {
-                formMessage.className = 'mt-6 p-4 rounded-xl text-center font-bold bg-blue-100 text-blue-800';
-            }
-        }
-        
-        // Phone Number Formatting
-        const phoneInput = document.getElementById('phone');
-        phoneInput.addEventListener('input', function(e) {
-            let value = e.target.value.replace(/\D/g, '');
-            
-            if (value.length <= 3) {
-                e.target.value = value;
-            } else if (value.length <= 7) {
-                e.target.value = value.slice(0, 3) + '-' + value.slice(3);
-            } else {
-                e.target.value = value.slice(0, 3) + '-' + value.slice(3, 7) + '-' + value.slice(7, 11);
-            }
-        });
-        
-        // Counter Animation
-        const counters = document.querySelectorAll('.counter');
-        const speed = 200;
-        
-        const countUp = () => {
-            counters.forEach(counter => {
-                const target = counter.innerText;
-                const isPercent = target.includes('%');
-                const isPlus = target.includes('+');
-                const targetValue = parseInt(target.replace(/[^0-9]/g, ''));
-                
-                const updateCount = () => {
-                    const count = parseInt(counter.innerText.replace(/[^0-9]/g, '')) || 0;
-                    const increment = targetValue / speed;
-                    
-                    if (count < targetValue) {
-                        let newValue = Math.ceil(count + increment);
-                        if (isPercent) newValue += '%';
-                        if (isPlus) newValue += '+';
-                        counter.innerText = newValue;
-                        setTimeout(updateCount, 1);
-                    } else {
-                        let finalValue = targetValue.toLocaleString();
-                        if (isPercent) finalValue += '%';
-                        if (isPlus) finalValue += '+';
-                        counter.innerText = finalValue;
-                    }
-                };
-                
-                updateCount();
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
             });
-        };
-        
-        // Trigger counter animation when in viewport
-        const observerOptions = {
-            threshold: 0.5
-        };
-        
-        const observer = new IntersectionObserver((entries) => {
-            entries.forEach(entry => {
-                if (entry.isIntersecting) {
-                    countUp();
-                    observer.unobserve(entry.target);
-                }
-            });
-        }, observerOptions);
-        
-        const statsSection = document.querySelector('.hero-bg');
-        if (statsSection) {
-            observer.observe(statsSection);
-        }
+        });
     </script>
 </body>
 </html>
