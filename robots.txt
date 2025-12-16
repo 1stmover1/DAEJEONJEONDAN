@@ -1,0 +1,19 @@
+# robots.txt for www.daejeon-jeondanji.com
+User-agent: *
+Allow: /
+
+# Sitemap
+Sitemap: https://www.daejeon-jeondanji.com/sitemap.xml
+
+# Allow search engines to crawl all content
+User-agent: Googlebot
+Allow: /
+
+User-agent: Bingbot
+Allow: /
+
+User-agent: Yeti
+Allow: /
+
+# Disallow nothing - allow full indexing
+Disallow:
