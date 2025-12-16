@@ -12,7 +12,7 @@
     <meta property="og:url" content="https://www.daejeon-jeondanji.com/">
     <meta property="og:title" content="대전전단지 제작 1위 | 대전현수막 전문">
     <meta property="og:description" content="깔끔한 디자인, 합리적 가격. 010-5456-7754 무료 상담.">
-    <meta property="og:image" content="https://images.unsplash.com/photo-1542744173-8e7e53415bb0?w=1200&h=630&fit=crop">
+    <meta property="og:image" content="https://images.unsplash.com/photo-1626785774573-4b799314344d?w=1200&h=630&fit=crop">
     
     <!-- Tailwind CSS CDN -->
     <script src="https://cdn.tailwindcss.com"></script>
@@ -78,7 +78,12 @@
         
         .img-rounded {
             border-radius: 1rem;
-            box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+            box-shadow: 0 10px 30px rgba(0,0,0,0.08);
+            transition: transform 0.3s ease;
+        }
+        
+        .img-rounded:hover {
+            transform: scale(1.02);
         }
 
         .service-icon-box {
@@ -106,7 +111,29 @@
             flex-shrink: 0;
         }
         
-        /* Sticky CTA for Mobile */
+        /* Portfolio Overlay */
+        .portfolio-item {
+            position: relative;
+            overflow: hidden;
+            border-radius: 0.75rem;
+        }
+        
+        .portfolio-overlay {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            background: linear-gradient(to top, rgba(0,0,0,0.8), transparent);
+            padding: 1.5rem;
+            opacity: 0;
+            transition: opacity 0.3s ease;
+        }
+        
+        .portfolio-item:hover .portfolio-overlay {
+            opacity: 1;
+        }
+        
+        /* Mobile Sticky CTA */
         .mobile-sticky-cta {
             display: none;
         }
@@ -137,7 +164,7 @@
         "@context": "https://schema.org",
         "@type": "LocalBusiness",
         "name": "대전디자인프린트",
-        "image": "https://images.unsplash.com/photo-1542744173-8e7e53415bb0?w=1200",
+        "image": "https://images.unsplash.com/photo-1626785774573-4b799314344d",
         "telephone": "010-5456-7754",
         "address": {
             "@type": "PostalAddress",
@@ -162,8 +189,8 @@
             <nav class="hidden md:flex space-x-8">
                 <a href="#flyer" class="text-gray-600 hover:text-primary font-medium">전단지</a>
                 <a href="#banner" class="text-gray-600 hover:text-primary font-medium">현수막</a>
-                <a href="#business-card" class="text-gray-600 hover:text-primary font-medium">명함/기타</a>
                 <a href="#portfolio" class="text-gray-600 hover:text-primary font-medium">포트폴리오</a>
+                <a href="#contact" class="text-gray-600 hover:text-primary font-medium">견적신청</a>
             </nav>
             
             <div class="hidden md:flex items-center space-x-3">
@@ -174,7 +201,7 @@
     </header>
 
     <!-- Hero Section -->
-    <section class="pt-32 pb-20 lg:pt-40 lg:pb-28 bg-gray-50 overflow-hidden">
+    <section class="pt-32 pb-20 lg:pt-44 lg:pb-32 bg-gray-50 overflow-hidden">
         <div class="container mx-auto px-4 lg:px-8">
             <div class="flex flex-col lg:flex-row items-center gap-12 lg:gap-20">
                 <div class="lg:w-1/2" data-aos="fade-right">
@@ -199,27 +226,20 @@
                             온라인 견적 문의
                         </a>
                     </div>
-                    
-                    <div class="mt-10 flex items-center space-x-6 text-sm text-gray-500">
-                        <div class="flex items-center">
-                            <svg class="w-5 h-5 text-green-500 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/></svg>
-                            당일 디자인
-                        </div>
-                        <div class="flex items-center">
-                            <svg class="w-5 h-5 text-green-500 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/></svg>
-                            최저가 보장
-                        </div>
-                        <div class="flex items-center">
-                            <svg class="w-5 h-5 text-green-500 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/></svg>
-                            배포 인증
-                        </div>
-                    </div>
                 </div>
                 <div class="lg:w-1/2 relative" data-aos="fade-left">
-                    <img src="https://images.unsplash.com/photo-1626785774573-4b799314344d?w=800&auto=format&fit=crop&q=60" alt="대전 전단지 디자인 작업" class="img-rounded w-full object-cover h-[500px]">
+                    <!-- Image: Designer Workspace / Mockup -->
+                    <img src="https://images.unsplash.com/photo-1626785774573-4b799314344d?w=800&auto=format&fit=crop&q=80" alt="대전 전단지 디자인 작업" class="img-rounded w-full object-cover h-[500px]">
                     <div class="absolute -bottom-6 -left-6 bg-white p-6 rounded-lg shadow-xl hidden md:block">
-                        <p class="text-3xl font-bold text-primary mb-1">1,500+</p>
-                        <p class="text-gray-600 font-medium">제작 완료 건수</p>
+                        <div class="flex items-center gap-4">
+                            <div class="w-12 h-12 rounded-full bg-blue-100 flex items-center justify-center text-primary">
+                                <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 10h4.764a2 2 0 011.789 2.894l-3.5 7A2 2 0 0115.263 21h-4.017c-.163 0-.326-.02-.485-.06L7 20m7-10V5a2 2 0 00-2-2h-.095c-.5 0-.905.405-.905.905 0 .714-.211 1.412-.608 2.006L7 11v9m7-10h-2M7 20H5a2 2 0 01-2-2v-6a2 2 0 012-2h2.5"/></svg>
+                            </div>
+                            <div>
+                                <p class="text-3xl font-bold text-gray-900 mb-0">99%</p>
+                                <p class="text-gray-600 font-medium text-sm">고객 만족도</p>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -231,7 +251,9 @@
         <div class="container mx-auto px-4 lg:px-8">
             <div class="flex flex-col lg:flex-row items-center gap-12">
                 <div class="lg:w-1/2 order-2 lg:order-1" data-aos="fade-up">
-                    <img src="https://images.unsplash.com/photo-1586023492125-27b2c045efd7?w=800&auto=format&fit=crop&q=60" alt="대전 전단지 제작 샘플" class="img-rounded w-full shadow-lg">
+                    <!-- Image: Flyer Mockup (Stack of papers) -->
+                    <img src="https://images.unsplash.com/photo-1586023492125-27b2c045efd7?w=800&auto=format&fit=crop&q=80" alt="대전 전단지 제작 샘플" class="img-rounded w-full shadow-lg h-[400px] object-cover">
+                    <div class="mt-4 text-center text-sm text-gray-500">* 실제 제작된 전단지 시안 예시입니다.</div>
                 </div>
                 <div class="lg:w-1/2 order-1 lg:order-2" data-aos="fade-up">
                     <div class="service-icon-box">
@@ -278,14 +300,72 @@
                     <a href="#contact" class="btn-primary px-6 py-3 rounded-lg font-bold">현수막 견적 받기</a>
                 </div>
                 <div class="lg:w-1/2" data-aos="fade-up">
-                    <img src="https://images.unsplash.com/photo-1563986768609-322da13575f3?w=800&auto=format&fit=crop&q=60" alt="대전 현수막 제작 설치" class="img-rounded w-full shadow-lg">
+                    <!-- Image: Outdoor Banner Mockup -->
+                    <img src="https://images.unsplash.com/photo-1542744173-8e7e53415bb0?w=800&auto=format&fit=crop&q=80" alt="대전 현수막 제작 설치" class="img-rounded w-full shadow-lg h-[400px] object-cover">
                 </div>
             </div>
         </div>
     </section>
 
+    <!-- Portfolio Gallery -->
+    <section id="portfolio" class="section-padding bg-white">
+        <div class="container mx-auto px-4 lg:px-8">
+            <div class="text-center mb-16">
+                <span class="text-primary font-bold tracking-wider uppercase text-sm">Portfolio</span>
+                <h2 class="text-3xl lg:text-4xl font-bold mt-2 mb-4">제작 사례 포트폴리오</h2>
+                <p class="text-gray-600">대전 지역 사장님들이 선택한 디자인입니다.</p>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+                <!-- Portfolio 1: Restaurant -->
+                <div class="portfolio-item group" data-aos="fade-up" data-aos-delay="0">
+                    <img src="https://images.unsplash.com/photo-1555396273-367ea4eb4db5?w=600&auto=format&fit=crop&q=80" alt="식당 메뉴 전단지" class="w-full h-80 object-cover transition-transform duration-500 group-hover:scale-110">
+                    <div class="portfolio-overlay text-white flex flex-col justify-end p-6">
+                        <span class="text-sm font-medium text-blue-300 mb-1">식당/카페</span>
+                        <h3 class="text-xl font-bold">레스토랑 오픈 전단지</h3>
+                    </div>
+                </div>
+
+                <!-- Portfolio 2: Academy -->
+                <div class="portfolio-item group" data-aos="fade-up" data-aos-delay="100">
+                    <img src="https://images.unsplash.com/photo-1503676260728-1c00da094a0b?w=600&auto=format&fit=crop&q=80" alt="학원 교육 전단지" class="w-full h-80 object-cover transition-transform duration-500 group-hover:scale-110">
+                    <div class="portfolio-overlay text-white flex flex-col justify-end p-6">
+                        <span class="text-sm font-medium text-blue-300 mb-1">학원/교육</span>
+                        <h3 class="text-xl font-bold">영어/수학학원 원생모집</h3>
+                    </div>
+                </div>
+
+                <!-- Portfolio 3: Fitness -->
+                <div class="portfolio-item group" data-aos="fade-up" data-aos-delay="200">
+                    <img src="https://images.unsplash.com/photo-1534438327276-14e5300c3a48?w=600&auto=format&fit=crop&q=80" alt="헬스장 전단지" class="w-full h-80 object-cover transition-transform duration-500 group-hover:scale-110">
+                    <div class="portfolio-overlay text-white flex flex-col justify-end p-6">
+                        <span class="text-sm font-medium text-blue-300 mb-1">피트니스/뷰티</span>
+                        <h3 class="text-xl font-bold">헬스장 회원권 이벤트</h3>
+                    </div>
+                </div>
+
+                <!-- Portfolio 4: Real Estate/Banner -->
+                <div class="portfolio-item group" data-aos="fade-up" data-aos-delay="300">
+                    <img src="https://images.unsplash.com/photo-1560518883-ce09059eeffa?w=600&auto=format&fit=crop&q=80" alt="부동산 전단지" class="w-full h-80 object-cover transition-transform duration-500 group-hover:scale-110">
+                    <div class="portfolio-overlay text-white flex flex-col justify-end p-6">
+                        <span class="text-sm font-medium text-blue-300 mb-1">부동산/분양</span>
+                        <h3 class="text-xl font-bold">아파트 분양 홍보물</h3>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="mt-12 text-center">
+                <p class="text-gray-500 mb-6">※ 위 이미지는 디자인 참고용 연출 이미지입니다.</p>
+                <a href="#contact" class="btn-outline px-8 py-3 rounded-full font-bold inline-flex items-center">
+                    더 많은 포트폴리오 문의
+                    <svg class="w-4 h-4 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/></svg>
+                </a>
+            </div>
+        </div>
+    </section>
+
     <!-- Product Section 3: Business Card & Etc (명함/기타) -->
-    <section id="business-card" class="section-padding bg-white">
+    <section id="business-card" class="section-padding bg-gray-50">
         <div class="container mx-auto px-4 lg:px-8">
             <div class="text-center mb-16" data-aos="fade-up">
                 <h2 class="text-3xl lg:text-4xl font-bold mb-4">명함 · 배너 · 스티커</h2>
@@ -294,9 +374,9 @@
             
             <div class="grid md:grid-cols-3 gap-8">
                 <!-- Card 1: 명함 -->
-                <div class="bg-gray-50 rounded-2xl p-0 overflow-hidden hover:shadow-lg transition-shadow" data-aos="fade-up" data-aos-delay="100">
-                    <img src="https://images.unsplash.com/photo-1593642532400-2682810df593?w=600&auto=format&fit=crop&q=60" alt="고급 명함 디자인" class="w-full h-48 object-cover">
-                    <div class="p-6">
+                <div class="bg-white rounded-2xl p-0 overflow-hidden shadow-md hover:shadow-xl transition-shadow" data-aos="fade-up" data-aos-delay="100">
+                    <img src="https://images.unsplash.com/photo-1593642532400-2682810df593?w=600&auto=format&fit=crop&q=80" alt="고급 명함 디자인" class="w-full h-56 object-cover">
+                    <div class="p-8">
                         <h3 class="text-xl font-bold mb-2">프리미엄 명함</h3>
                         <p class="text-primary font-bold mb-3">100장 10,000원~</p>
                         <p class="text-gray-600 text-sm mb-4">
@@ -306,9 +386,9 @@
                 </div>
                 
                 <!-- Card 2: 배너 -->
-                <div class="bg-gray-50 rounded-2xl p-0 overflow-hidden hover:shadow-lg transition-shadow" data-aos="fade-up" data-aos-delay="200">
-                    <img src="https://images.unsplash.com/photo-1560179707-f14e90ef3dab?w=600&auto=format&fit=crop&q=60" alt="X배너 디자인" class="w-full h-48 object-cover">
-                    <div class="p-6">
+                <div class="bg-white rounded-2xl p-0 overflow-hidden shadow-md hover:shadow-xl transition-shadow" data-aos="fade-up" data-aos-delay="200">
+                    <img src="https://images.unsplash.com/photo-1560179707-f14e90ef3dab?w=600&auto=format&fit=crop&q=80" alt="X배너 디자인" class="w-full h-56 object-cover">
+                    <div class="p-8">
                         <h3 class="text-xl font-bold mb-2">X배너 / 입간판</h3>
                         <p class="text-primary font-bold mb-3">실내용 30,000원~</p>
                         <p class="text-gray-600 text-sm mb-4">
@@ -318,42 +398,15 @@
                 </div>
                 
                 <!-- Card 3: 스티커/리플렛 -->
-                <div class="bg-gray-50 rounded-2xl p-0 overflow-hidden hover:shadow-lg transition-shadow" data-aos="fade-up" data-aos-delay="300">
-                    <img src="https://images.unsplash.com/photo-1629904853716-6c17e082c9e8?w=600&auto=format&fit=crop&q=60" alt="리플렛 스티커 제작" class="w-full h-48 object-cover">
-                    <div class="p-6">
+                <div class="bg-white rounded-2xl p-0 overflow-hidden shadow-md hover:shadow-xl transition-shadow" data-aos="fade-up" data-aos-delay="300">
+                    <img src="https://images.unsplash.com/photo-1629904853716-6c17e082c9e8?w=600&auto=format&fit=crop&q=80" alt="리플렛 스티커 제작" class="w-full h-56 object-cover">
+                    <div class="p-8">
                         <h3 class="text-xl font-bold mb-2">리플렛 · 스티커</h3>
                         <p class="text-primary font-bold mb-3">별도 견적 문의</p>
                         <p class="text-gray-600 text-sm mb-4">
                             제품 라벨, 홍보용 리플렛<br>다양한 사이즈와 모양 제작
                         </p>
                     </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Portfolio Gallery -->
-    <section id="portfolio" class="section-padding bg-gray-50">
-        <div class="container mx-auto px-4 lg:px-8">
-            <div class="flex justify-between items-end mb-12">
-                <div>
-                    <h2 class="text-3xl lg:text-4xl font-bold mb-2">포트폴리오</h2>
-                    <p class="text-gray-600">대전 지역 다양한 업종의 실제 제작 사례입니다.</p>
-                </div>
-            </div>
-            
-            <div class="grid grid-cols-2 md:grid-cols-4 gap-4">
-                <div class="rounded-lg overflow-hidden h-64 shadow-md group">
-                    <img src="https://images.unsplash.com/photo-1555396273-367ea4eb4db5?w=600&auto=format&fit=crop&q=60" alt="식당 전단지" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500">
-                </div>
-                <div class="rounded-lg overflow-hidden h-64 shadow-md group">
-                    <img src="https://images.unsplash.com/photo-1509062522246-3755977927d7?w=600&auto=format&fit=crop&q=60" alt="학원 전단지" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500">
-                </div>
-                <div class="rounded-lg overflow-hidden h-64 shadow-md group">
-                    <img src="https://images.unsplash.com/photo-1587614382346-4ec70e388b28?w=600&auto=format&fit=crop&q=60" alt="헬스장 전단지" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500">
-                </div>
-                <div class="rounded-lg overflow-hidden h-64 shadow-md group">
-                    <img src="https://images.unsplash.com/photo-1560518883-ce09059eeffa?w=600&auto=format&fit=crop&q=60" alt="부동산 전단지" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500">
                 </div>
             </div>
         </div>
