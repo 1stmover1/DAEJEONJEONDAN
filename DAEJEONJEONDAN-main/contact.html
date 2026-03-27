@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>상담신청 | 대전디자인</title>
+    <meta name="description" content="무료 디자인 시안 신청. 10분 내 전문 디자이너가 연락드립니다. 010-4433-0938">
+    <link rel="icon" href="images/favicon.png" type="image/png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<!-- Header -->
+<header class="glass-header scrolled" id="header">
+    <div class="container glass-header-inner">
+        <a href="index.html" class="logo">
+            <img src="images/logo.png" alt="로고" class="logo-icon">
+            <span class="logo-text">대전디자인</span>
+        </a>
+        <nav class="glass-nav" id="nav">
+            <a href="services.html" class="glass-nav-link">서비스</a>
+            <a href="portfolio.html" class="glass-nav-link">포트폴리오</a>
+            <a href="about.html" class="glass-nav-link">회사소개</a>
+            <a href="contact.html" class="glass-nav-link active">상담신청</a>
+        </nav>
+        <div class="header-right">
+            <a href="tel:01044330938" class="glass-phone-icon" aria-label="전화 문의"><i class="fas fa-phone-alt"></i></a>
+            <a href="contact.html" class="btn btn-primary btn-sm">무료 시안 신청</a>
+            <button class="mobile-toggle" id="mobileToggle" aria-label="메뉴">
+                <span></span><span></span><span></span>
+            </button>
+        </div>
+    </div>
+</header>
+
+<!-- Page Hero -->
+<section class="page-hero">
+    <div class="hero-bg">
+        <img src="images/hero-daejeon.jpg" alt="대전" loading="eager">
+    </div>
+    <div class="container page-hero-content">
+        <h1>Contact</h1>
+        <p>무료 디자인 시안을 신청하세요</p>
+    </div>
+</section>
+
+<!-- Contact Section -->
+<section class="section">
+    <div class="container" style="max-width:860px">
+        <div class="section-header center reveal">
+            <p class="section-label">Free Consultation</p>
+            <h2 class="section-title">무료 시안 / 견적 신청</h2>
+            <p class="section-desc">접수 후 10분 내 전문 디자이너가 연락드립니다.<br>시안이 마음에 들지 않으시면 진행하지 않으셔도 됩니다.</p>
+        </div>
+
+        <div class="form-card reveal">
+            <form id="contactForm">
+                <div class="form-row">
+                    <div class="form-group">
+                        <label>업체명 <span class="req">*</span></label>
+                        <input type="text" id="companyName" placeholder="업체명" required>
+                    </div>
+                    <div class="form-group">
+                        <label>담당자명 <span class="req">*</span></label>
+                        <input type="text" id="contactName" placeholder="담당자명" required>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label>연락처 <span class="req">*</span></label>
+                    <input type="tel" id="phone" placeholder="010-1234-5678" required>
+                </div>
+                <div class="form-group">
+                    <label>서비스 유형 <span class="req">*</span></label>
+                    <div class="checkbox-group">
+                        <label class="checkbox-label"><input type="checkbox" name="serviceType" value="전단지"><span>전단지</span></label>
+                        <label class="checkbox-label"><input type="checkbox" name="serviceType" value="현수막"><span>현수막</span></label>
+                        <label class="checkbox-label"><input type="checkbox" name="serviceType" value="명함"><span>명함</span></label>
+                        <label class="checkbox-label"><input type="checkbox" name="serviceType" value="배너"><span>배너</span></label>
+                        <label class="checkbox-label"><input type="checkbox" name="serviceType" value="리플렛"><span>리플렛</span></label>
+                        <label class="checkbox-label"><input type="checkbox" name="serviceType" value="배포"><span>배포</span></label>
+                        <label class="checkbox-label"><input type="checkbox" name="serviceType" value="기타"><span>기타</span></label>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label>문의내용</label>
+                    <textarea id="message" rows="4" placeholder="업종, 수량, 원하시는 디자인 스타일 등을 자유롭게 적어주세요."></textarea>
+                </div>
+                <div class="form-group">
+                    <label class="checkbox-label">
+                        <input type="checkbox" id="privacyAgree" required>
+                        <span>[필수] 개인정보 수집 및 이용에 동의합니다.</span>
+                    </label>
+                    <p class="privacy-text">수집 항목: 업체명, 담당자명, 연락처 / 이용 목적: 상담 및 견적 제공 / 보유 기간: 상담 완료 후 1년</p>
+                </div>
+                <button type="submit" class="btn btn-primary btn-block btn-lg" id="submitBtn">무료 시안 신청하기</button>
+                <div class="form-phone">
+                    또는 바로 전화 문의하세요
+                    <a href="tel:01044330938">010-4433-0938</a>
+                </div>
+            </form>
+        </div>
+    </div>
+</section>
+
+<!-- Contact Info -->
+<section class="section" style="background:var(--bg-off)">
+    <div class="container">
+        <div class="card-grid cols-3 reveal">
+            <div class="icon-card">
+                <div class="ic-icon"><i class="fas fa-phone-alt"></i></div>
+                <h3>전화 문의</h3>
+                <p>010-4433-0938<br>평일 09:00 - 18:00</p>
+            </div>
+            <div class="icon-card">
+                <div class="ic-icon"><i class="fas fa-map-marker-alt"></i></div>
+                <h3>서비스 지역</h3>
+                <p>대전광역시 전지역<br>유성구, 서구, 중구, 동구, 대덕구</p>
+            </div>
+            <div class="icon-card">
+                <div class="ic-icon"><i class="fas fa-clock"></i></div>
+                <h3>응답 시간</h3>
+                <p>접수 후 10분 내 연락<br>시안 당일 제공</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Footer -->
+<footer class="footer">
+    <div class="container">
+        <div class="footer-grid">
+            <div class="footer-col">
+                <div class="footer-logo">
+                    <img src="images/logo.png" alt="로고">
+                    <span>대전디자인</span>
+                </div>
+                <p class="footer-tagline">전단지 디자인 · 인쇄 · 배포 전문<br>자체 디자인 제작으로 더 빠르고 정확하게</p>
+            </div>
+            <div class="footer-col">
+                <h4>Contact</h4>
+                <p>010-4433-0938</p>
+                <p>평일 09:00 - 18:00</p>
+                <p>대전광역시 전지역 서비스</p>
+            </div>
+            <div class="footer-col">
+                <h4>Quick Links</h4>
+                <p><a href="services.html">서비스</a></p>
+                <p><a href="portfolio.html">포트폴리오</a></p>
+                <p><a href="about.html">회사소개</a></p>
+                <p><a href="contact.html">상담신청</a></p>
+            </div>
+        </div>
+        <div class="footer-marketing">
+            <a href="https://sejong-marketing.com" target="_blank" rel="noopener">분양 , 선거 마케팅 관련 문의 <i class="fas fa-external-link-alt"></i></a>
+        </div>
+        <div class="footer-bottom">
+            <p>상호명: 세종AI디자인 | 대표: 김우중 | 사업자등록번호: 431-87-03181</p>
+            <p>주소: 세종특별자치시 한누리대로 234</p>
+            <p>&copy; 2026 대전디자인. All rights reserved.</p>
+        </div>
+    </div>
+</footer>
+
+<div class="floating-cta">
+    <a href="tel:01044330938" class="floating-btn phone" aria-label="전화"><i class="fas fa-phone-alt"></i></a>
+</div>
+
+<!-- Success Modal -->
+<div class="modal-overlay" id="successModal">
+    <div class="modal-content">
+        <div class="modal-icon"><i class="fas fa-check-circle"></i></div>
+        <h3>신청이 완료되었습니다</h3>
+        <p>전문 디자이너가 10분 내로 연락드리겠습니다.</p>
+        <button class="btn btn-primary" id="modalClose">확인</button>
+    </div>
+</div>
+
+<script src="js/main.js"></script>
+</body>
+</html>
