@@ -385,35 +385,23 @@ function initContactForm() {
         btn.textContent = '전송 중...';
 
         try {
-            // Send to Formspree
-            await fetch('https://formspree.io/f/mvgdzwry', {
+            const res = await fetch('/.netlify/functions/contact', {
                 method: 'POST',
-                headers: { 
-                    'Content-Type': 'application/json',
-                    'Accept': 'application/json'
-                },
+                headers: { 'Content-Type': 'application/json' },
                 body: JSON.stringify({
                     companyName, contactName, phone: phoneVal,
-                    serviceType: serviceTypes.join(', '),
+                    serviceType: serviceTypes,
                     message
                 })
             });
 
-            // Also save to local DB
-            try {
-                await fetch('tables/consultations', {
-                    method: 'POST',
-                    headers: { 'Content-Type': 'application/json' },
-                    body: JSON.stringify({
-                        companyName, contactName, phone: phoneVal,
-                        serviceType: serviceTypes.join(', '),
-                        message, status: '신규',
-                        submittedAt: new Date().toISOString()
-                    })
-                });
-            } catch(dbErr) { /* silent */ }
+            const data = await res.json();
+            if (!res.ok) throw new Error(data.error || '전송 실패');
 
-        } catch (err) { /* silent */ }
+        } catch (err) {
+            alert('문의 접수에 실패했습니다. 전화로 문의해주세요: 042-257-8258');
+            console.error(err);
+        }
 
         btn.classList.remove('loading');
         btn.textContent = '무료 시안 신청하기';

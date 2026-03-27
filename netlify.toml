@@ -3,6 +3,15 @@
   publish = "."
   command = "echo 'No build required for static site'"
 
+[functions]
+  directory = "netlify/functions"
+
+# API 함수는 리다이렉트하지 않음
+[[redirects]]
+  from = "/.netlify/functions/*"
+  to = "/.netlify/functions/:splat"
+  status = 200
+
 # 리다이렉트 규칙
 [[redirects]]
   from = "/*"
