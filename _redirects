@@ -1,2 +1,2 @@
 # Netlify 리다이렉트 규칙
-/*    /index.html   200
+# /.netlify/functions/* 경로는 제외

@@ -6,17 +6,12 @@
 [functions]
   directory = "netlify/functions"
 
-# API 함수는 리다이렉트하지 않음
-[[redirects]]
-  from = "/.netlify/functions/*"
-  to = "/.netlify/functions/:splat"
-  status = 200
-
-# 리다이렉트 규칙
+# 리다이렉트 규칙 (force=false: 함수/파일이 존재하면 리다이렉트하지 않음)
 [[redirects]]
   from = "/*"
   to = "/index.html"
   status = 200
+  force = false
 
 # 헤더 설정
 [[headers]]
