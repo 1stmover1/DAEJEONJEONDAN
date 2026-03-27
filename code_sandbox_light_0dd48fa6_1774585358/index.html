@@ -1,0 +1,391 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>대전디자인 | 전단지 디자인 · 인쇄 · 배포</title>
+    <meta name="description" content="대전 전단지 제작 전문. 자체 디자인, 인쇄, 배포 원스톱. 042-257-8258">
+    <meta name="keywords" content="대전전단지, 대전현수막, 대전홍보, 대전디자인, 전단지제작, 전단지배포, 대전명함">
+    <meta name="geo.region" content="KR-30">
+    <meta name="geo.placename" content="대전광역시">
+    <link rel="canonical" href="https://대전디자인.com/">
+    <link rel="icon" href="images/favicon.png" type="image/png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="css/style.css">
+
+    <!-- JSON-LD Structured Data -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "LocalBusiness",
+        "name": "세종AI디자인 (대전디자인)",
+        "description": "대전 전단지 디자인, 인쇄, 배포 전문 업체",
+        "telephone": "042-257-8258",
+        "address": {
+            "@type": "PostalAddress",
+            "streetAddress": "한누리대로 234",
+            "addressLocality": "세종특별자치시",
+            "addressCountry": "KR"
+        },
+        "areaServed": ["대전광역시","유성구","서구","중구","동구","대덕구"],
+        "priceRange": "₩10,000 - ₩100,000"
+    }
+    </script>
+</head>
+<body>
+
+<!-- Welcome Popup -->
+<div class="welcome-popup" id="welcomePopup">
+    <div class="welcome-popup-backdrop"></div>
+    <div class="welcome-popup-content">
+        <button class="welcome-popup-close" id="popupClose" aria-label="닫기"><i class="fas fa-times"></i></button>
+        <div class="welcome-popup-inner">
+            <div class="popup-badge">SPECIAL</div>
+            <h2>무료 디자인 시안<br>지금 바로 받아보세요</h2>
+            <p>전단지 / 현수막 / 명함 / 배너<br>업종 맞춤 시안을 무료로 제작해 드립니다</p>
+            <div class="popup-price-row">
+                <div class="popup-price-item">
+                    <span class="popup-price-label">전단지 500장</span>
+                    <span class="popup-price-value">6만원대~</span>
+                </div>
+                <div class="popup-price-item">
+                    <span class="popup-price-label">현수막 1.8m</span>
+                    <span class="popup-price-value">3만원대~</span>
+                </div>
+                <div class="popup-price-item">
+                    <span class="popup-price-label">명함 100장</span>
+                    <span class="popup-price-value">1만원대~</span>
+                </div>
+            </div>
+            <div class="popup-actions">
+                <a href="contact.html" class="btn btn-primary btn-lg popup-btn">무료 시안 받기</a>
+                <a href="tel:0422578258" class="btn btn-dark btn-lg popup-btn">전화 문의</a>
+            </div>
+            <label class="popup-noshow">
+                <input type="checkbox" id="popupNoShow"> 오늘 하루 보지 않기
+            </label>
+        </div>
+    </div>
+</div>
+
+<!-- Glass Header -->
+<header class="glass-header" id="header">
+    <div class="container glass-header-inner">
+        <a href="index.html" class="logo">
+            <img src="images/logo.png" alt="대전디자인 로고" class="logo-icon">
+            <span class="logo-text">대전디자인</span>
+        </a>
+        <nav class="glass-nav" id="nav">
+            <a href="services.html" class="glass-nav-link">서비스</a>
+            <a href="portfolio.html" class="glass-nav-link">포트폴리오</a>
+            <a href="about.html" class="glass-nav-link">회사소개</a>
+            <a href="contact.html" class="glass-nav-link">상담신청</a>
+        </nav>
+        <div class="header-right">
+            <a href="tel:0422578258" class="glass-phone-icon" aria-label="전화 문의"><i class="fas fa-phone-alt"></i></a>
+            <a href="contact.html" class="btn btn-primary btn-sm">무료 시안 신청</a>
+            <button class="mobile-toggle" id="mobileToggle" aria-label="메뉴">
+                <span></span><span></span><span></span>
+            </button>
+        </div>
+    </div>
+</header>
+
+<!-- Cinematic Hero Slider with Morphing Text -->
+<section class="hero-slider" id="heroSlider">
+    <div class="hero-slides">
+        <div class="hero-slide active" data-index="0">
+            <div class="slide-bg">
+                <img src="images/hero-studio.jpg" alt="디자인 스튜디오">
+            </div>
+            <div class="slide-overlay"></div>
+            <div class="container slide-content">
+                <p class="slide-label">대전 No.1 디자인 파트너</p>
+                <h1 class="slide-title">매출을 올리는<br><span class="morph-text" data-words="진짜 디자인,스마트한 전단지,맞춤형 홍보물">진짜 디자인</span></h1>
+                <p class="slide-desc">기획부터 인쇄, 배포까지 원스톱으로</p>
+                <div class="slide-actions">
+                    <a href="contact.html" class="btn btn-primary btn-lg">무료 시안받기</a>
+                    <a href="contact.html" class="btn btn-ghost btn-lg">문의하기</a>
+                </div>
+            </div>
+        </div>
+        <div class="hero-slide" data-index="1">
+            <div class="slide-bg">
+                <img src="images/hero-flatlay.jpg" alt="디자인 작업물">
+            </div>
+            <div class="slide-overlay"></div>
+            <div class="container slide-content">
+                <p class="slide-label">15년 경력 자체 디자인팀</p>
+                <h1 class="slide-title">시안 무료,<br><span class="morph-text" data-words="당일 제공,빠른 작업,정확한 결과">당일 제공</span></h1>
+                <p class="slide-desc">업종별 맞춤 디자인을 직접 만듭니다</p>
+                <div class="slide-actions">
+                    <a href="portfolio.html" class="btn btn-primary btn-lg">무료 시안받기</a>
+                    <a href="services.html" class="btn btn-ghost btn-lg">문의하기</a>
+                </div>
+            </div>
+        </div>
+        <div class="hero-slide" data-index="2">
+            <div class="slide-bg">
+                <img src="images/hero-daejeon.jpg" alt="대전 전경">
+            </div>
+            <div class="slide-overlay"></div>
+            <div class="container slide-content">
+                <p class="slide-label">대전 5개 구 전역 커버</p>
+                <h1 class="slide-title">대전 전지역<br><span class="morph-text" data-words="타겟 배포,상권 집중,효과적 홍보">타겟 배포</span></h1>
+                <p class="slide-desc">둔산동 / 은행동 / 유성구 상권 집중 배포</p>
+                <div class="slide-actions">
+                    <a href="contact.html" class="btn btn-primary btn-lg">무료 시안받기</a>
+                    <a href="contact.html" class="btn btn-ghost btn-lg">문의하기</a>
+                </div>
+            </div>
+        </div>
+        <div class="hero-slide" data-index="3">
+            <div class="slide-bg">
+                <img src="images/hero-print.jpg" alt="고품질 인쇄">
+            </div>
+            <div class="slide-overlay"></div>
+            <div class="container slide-content">
+                <p class="slide-label">전단지 500장 6만원대~</p>
+                <h1 class="slide-title">최저가에<br><span class="morph-text" data-words="최고 퀄리티,프리미엄 인쇄,선명한 색감">최고 퀄리티</span></h1>
+                <p class="slide-desc">선명한 색감, 프리미엄 용지, 정확한 재단</p>
+                <div class="slide-actions">
+                    <a href="services.html#pricing" class="btn btn-primary btn-lg">무료 시안받기</a>
+                    <a href="contact.html" class="btn btn-ghost btn-lg">문의하기</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Slider Controls -->
+    <div class="slider-controls">
+        <div class="slider-progress">
+            <button class="slider-dot active" data-slide="0"><span class="dot-progress"></span></button>
+            <button class="slider-dot" data-slide="1"><span class="dot-progress"></span></button>
+            <button class="slider-dot" data-slide="2"><span class="dot-progress"></span></button>
+            <button class="slider-dot" data-slide="3"><span class="dot-progress"></span></button>
+        </div>
+        <div class="slider-counter">
+            <span class="current-num">01</span>
+            <span class="counter-divider"></span>
+            <span class="total-num">04</span>
+        </div>
+    </div>
+
+    <!-- Side Stats -->
+    <div class="hero-side-stats">
+        <div class="side-stat">
+            <span class="side-stat-num">1,200+</span>
+            <span class="side-stat-label">누적 고객</span>
+        </div>
+        <div class="side-stat">
+            <span class="side-stat-num">15년</span>
+            <span class="side-stat-label">디자인 경력</span>
+        </div>
+        <div class="side-stat">
+            <span class="side-stat-num">98%</span>
+            <span class="side-stat-label">고객 만족</span>
+        </div>
+    </div>
+
+    <!-- Scroll Indicator -->
+    <div class="scroll-indicator">
+        <span>scroll</span>
+        <div class="scroll-line"></div>
+    </div>
+</section>
+
+<!-- Showcase 1: Design -->
+<section class="section">
+    <div class="container">
+        <div class="showcase reveal">
+            <div class="showcase-body">
+                <p class="section-label">Design</p>
+                <h3>자체 디자인으로<br>차별화된 퀄리티</h3>
+                <p>외주 없이 사내 전문 디자이너가 직접 작업합니다. 업종 특성에 맞춘 디자인으로 고객의 눈길을 사로잡습니다.</p>
+                <ul class="showcase-list">
+                    <li>업종별 맞춤 시안 무료 제공</li>
+                    <li>수정 횟수 제한 없음</li>
+                    <li>15년 경력 시니어 디자이너</li>
+                </ul>
+                <a href="services.html" class="btn btn-dark btn-sm">서비스 보기</a>
+            </div>
+            <div class="showcase-img">
+                <img src="images/designer-work.jpg" alt="디자이너 작업 모습" loading="lazy">
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Showcase 2: Print -->
+<section class="section" style="background:var(--bg-off)">
+    <div class="container">
+        <div class="showcase reverse reveal">
+            <div class="showcase-body">
+                <p class="section-label">Print</p>
+                <h3>고품질 인쇄,<br>합리적인 가격</h3>
+                <p>최신 디지털 인쇄 장비로 선명한 색감과 정확한 재단을 보장합니다. 500장부터 소량 제작이 가능합니다.</p>
+                <ul class="showcase-list">
+                    <li>전단지 500장 6만원대~</li>
+                    <li>현수막 1.8m 3만원대~</li>
+                    <li>명함 100장 1만원대~</li>
+                </ul>
+                <a href="services.html#pricing" class="btn btn-dark btn-sm">가격 확인</a>
+            </div>
+            <div class="showcase-img">
+                <img src="images/print-facility.jpg" alt="전문 인쇄 시설" loading="lazy">
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Showcase 3: Distribute -->
+<section class="section">
+    <div class="container">
+        <div class="showcase reveal">
+            <div class="showcase-body">
+                <p class="section-label">Distribute</p>
+                <h3>대전 전지역<br>타겟 배포</h3>
+                <p>유성구, 서구, 중구, 동구, 대덕구 전역 배포. 둔산동 학원가, 은행동 상권 등 타겟 지역 집중 배포가 가능합니다.</p>
+                <ul class="showcase-list">
+                    <li>배포 인증 사진 제공</li>
+                    <li>상권 분석 기반 배포</li>
+                    <li>대전 5개 구 전역 커버</li>
+                </ul>
+                <a href="contact.html" class="btn btn-primary btn-sm">배포 상담</a>
+            </div>
+            <div class="showcase-img">
+                <img src="images/distribution.jpg" alt="전단지 배포 현장" loading="lazy">
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Portfolio Preview -->
+<section class="section" style="background:var(--bg-off)">
+    <div class="container">
+        <div class="section-header center reveal">
+            <p class="section-label">Portfolio</p>
+            <h2 class="section-title">최근 작업물</h2>
+            <p class="section-desc">대전 지역 실제 고객사 제작 사례</p>
+        </div>
+        <div class="gallery-grid reveal">
+            <div class="gallery-item">
+                <img src="images/portfolio-restaurant.jpg" alt="식당 전단지" loading="lazy">
+                <div class="gallery-overlay"><span>식당 전단지</span></div>
+            </div>
+            <div class="gallery-item">
+                <img src="images/portfolio-cafe.jpg" alt="카페 메뉴판" loading="lazy">
+                <div class="gallery-overlay"><span>카페 홍보물</span></div>
+            </div>
+            <div class="gallery-item">
+                <img src="images/portfolio-academy.jpg" alt="학원 전단지" loading="lazy">
+                <div class="gallery-overlay"><span>학원 전단지</span></div>
+            </div>
+            <div class="gallery-item">
+                <img src="images/portfolio-beauty.jpg" alt="뷰티 홍보물" loading="lazy">
+                <div class="gallery-overlay"><span>뷰티 홍보물</span></div>
+            </div>
+            <div class="gallery-item">
+                <img src="images/portfolio-realestate.jpg" alt="부동산 전단지" loading="lazy">
+                <div class="gallery-overlay"><span>부동산 전단지</span></div>
+            </div>
+            <div class="gallery-item">
+                <img src="images/portfolio-opening.jpg" alt="오픈 이벤트" loading="lazy">
+                <div class="gallery-overlay"><span>오픈 이벤트</span></div>
+            </div>
+        </div>
+        <div class="text-center mt-48">
+            <a href="portfolio.html" class="btn btn-outline">포트폴리오 전체 보기</a>
+        </div>
+    </div>
+</section>
+
+<!-- Stats -->
+<section class="section">
+    <div class="container">
+        <div class="stat-bar reveal">
+            <div class="stat-item">
+                <span class="num" data-count="1200">0</span>
+                <span class="label">누적 고객</span>
+            </div>
+            <div class="stat-item">
+                <span class="num" data-count="15">0</span>
+                <span class="label">년 경력</span>
+            </div>
+            <div class="stat-item">
+                <span class="num" data-count="98">0</span>
+                <span class="label">% 만족도</span>
+            </div>
+            <div class="stat-item">
+                <span class="num">당일</span>
+                <span class="label">시안 제공</span>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- CTA Banner -->
+<section class="cta-banner">
+    <div class="cta-bg">
+        <img src="images/hero-daejeon.jpg" alt="대전 전경" loading="lazy">
+        <div class="cta-bg-overlay"></div>
+    </div>
+    <div class="cta-banner-content">
+        <h2>무료 디자인 시안,<br>지금 받아보세요</h2>
+        <p>10분 내 전문 디자이너가 연락드립니다.</p>
+        <div class="btn-group">
+            <a href="contact.html" class="btn btn-primary btn-lg">무료 시안받기</a>
+            <a href="contact.html" class="btn btn-ghost btn-lg">문의하기</a>
+        </div>
+    </div>
+</section>
+
+<!-- Footer -->
+<footer class="footer">
+    <div class="container">
+        <div class="footer-grid">
+            <div class="footer-col">
+                <div class="footer-logo">
+                    <img src="images/logo.png" alt="로고">
+                    <span>대전디자인</span>
+                </div>
+                <p class="footer-tagline">전단지 디자인 · 인쇄 · 배포 전문<br>자체 디자인 제작으로 더 빠르고 정확하게</p>
+            </div>
+            <div class="footer-col">
+                <h4>Contact</h4>
+                <p><a href="tel:0422578258">042-257-8258</a></p>
+                <p>평일 09:00 - 18:00</p>
+                <p>대전광역시 전지역 서비스</p>
+            </div>
+            <div class="footer-col">
+                <h4>Quick Links</h4>
+                <p><a href="services.html">서비스</a></p>
+                <p><a href="portfolio.html">포트폴리오</a></p>
+                <p><a href="about.html">회사소개</a></p>
+                <p><a href="contact.html">상담신청</a></p>
+            </div>
+        </div>
+        <div class="footer-marketing">
+            <a href="https://sejong-marketing.com" target="_blank" rel="noopener">분양 , 선거 마케팅 관련 문의 <i class="fas fa-external-link-alt"></i></a>
+        </div>
+        <div class="footer-bottom">
+            <p>상호명: 세종AI디자인 | 대표: 김우중 | 사업자등록번호: 431-87-03181</p>
+            <p>주소: 세종특별자치시 한누리대로 234</p>
+            <p>&copy; 2026 대전디자인. All rights reserved.</p>
+        </div>
+    </div>
+</footer>
+
+<!-- Floating -->
+<div class="floating-cta">
+    <a href="tel:0422578258" class="floating-btn phone" aria-label="전화"><i class="fas fa-phone-alt"></i></a>
+    <a href="contact.html" class="floating-btn consult" aria-label="상담"><i class="fas fa-pen"></i></a>
+</div>
+
+<script src="js/main.js"></script>
+</body>
+</html>
